@@ -1,3 +1,7 @@
+# Default for everything: UTF-8 text with LF endings (git accepts an explicit
+# working-tree-encoding=UTF-8 as identity conversion). Later attribute lines
+# below override this for binary assets and byte-exact fixtures.
+* text=auto eol=lf working-tree-encoding=UTF-8
 # Docs, scripts and i18n tree: UTF-8 text (git's canonical encoding) pinned to
 # LF so pairing hashes and diffs stay stable regardless of core.autocrlf.
 # UTF-8 is the default index encoding; EOL is pinned via these attributes.
