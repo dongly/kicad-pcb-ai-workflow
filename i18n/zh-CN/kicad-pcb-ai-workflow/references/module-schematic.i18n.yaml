@@ -3,8 +3,8 @@
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/module-schematic.zh.md
 /schematic_design_and_pcb_synchronization:
-  en: 8b30a6e47ec581be
-  zh: e0b605eb4adb6dfd
+  en: e3492d622a663774
+  zh: 9f55dcea7e23a4c8
 /schematic_design_and_pcb_synchronization/executable_composition_screening:
   en: ab91cff38e19b22d
   zh: ced8d08f7aa462a8
