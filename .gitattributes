@@ -1,5 +1,21 @@
-# Native fixture/provenance hashes bind exact exported bytes on every platform.
+# Docs, scripts and i18n tree: UTF-8 text (git's canonical encoding) pinned to
+# LF so pairing hashes and diffs stay stable regardless of core.autocrlf.
+# UTF-8 is the default index encoding; EOL is pinned via these attributes.
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.svg text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+i18n/** text eol=lf
+*.zip binary
+*.png binary
+# Payload tree keeps its own pin (same effect as the globs above).
 kicad-pcb-ai-workflow/** text eol=lf
-# Native serializers' CRLF/tab-only lines are evidence, not hand-edited style.
+# Native fixture/provenance hashes bind exact exported bytes on every platform.
+# These exception lines must stay LAST: later gitattributes lines override
+# earlier ones, and the serializers' CRLF/tab-only bytes are evidence, not style.
 development/fixtures/led-8x8-12v/** -text -whitespace
 development/konnect-field-extension/pcb_fields.rs -text
