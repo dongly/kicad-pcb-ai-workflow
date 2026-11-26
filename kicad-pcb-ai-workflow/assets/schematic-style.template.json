@@ -17,6 +17,11 @@
       "rails": [],
       "allow_rail_labels": []
     },
+    "labels": {
+      "schema_version": 1,
+      "prefer_hierarchy": true,
+      "allow_global_labels": []
+    },
     "partition": {
       "mode": "auto",
       "modules": [],

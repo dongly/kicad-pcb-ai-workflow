@@ -72,7 +72,7 @@ The preflight must not be run with `--apply`; it performs **no EDA modifications
 }
 ```
 
-`topology_file` is an independently authored JSON with `schema_version:1`, `pins` entries `{"ref":"R1","pin":"1","net":"GND"}`, and `source:{"file":"...","sha256":"...","locator":"..."}`. Every new symbol pin must appear **exactly once**. Each electrical pin must have either an explicit connection or a space-reserved local/hierarchical/global/power label; `NC` requires deliberate declaration. Non-power label text must equal net identity. Other pages remain unchanged; arbitrary direct EDA writes remain outside this planning tool's reach.
+`topology_file` is an independently authored JSON with `schema_version:1`, `pins` entries `{"ref":"R1","pin":"1","net":"GND"}`, and `source:{"file":"...","sha256":"...","locator":"..."}`. Every new symbol pin must appear **exactly once**. Each electrical pin must have either an explicit connection or a space-reserved local/hierarchical/global/power label; choose `kind` in the order local → hierarchical (when the net leaves the sheet) → global (only for an allow-listed board-wide net), so a pre-placement plan never bakes in global labels as the lazy cross-sheet default; `NC` requires deliberate declaration. Non-power label text must equal net identity. Other pages remain unchanged; arbitrary direct EDA writes remain outside this planning tool's reach.
 
 ## Engineering limitations and acceptance
 

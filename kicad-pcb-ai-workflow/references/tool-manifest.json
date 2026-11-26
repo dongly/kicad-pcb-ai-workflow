@@ -552,7 +552,7 @@
       "input": "Explicit project contracts; no inferred circuit/process values",
       "output": "Declared-scope reports or independent candidate; never implicit engineering approval",
       "validation_scope": "Software contracts; live GUI, faults and hardware are separately recorded in this release evidence.",
-      "sha256": "0f6af5dc4023487d53430c56b2ae9ca2143a18a6ef61cbed600e017345703306",
+      "sha256": "f2a8d92088629abe57d0a66f58171ed3e59876ae7a989b7e7cbea3c1ff528bc8",
       "exit_codes": {
         "0": "Declared scope complete/preview; never automatic approval",
         "2": "BLOCKED; do not advance or manufacture"
@@ -604,10 +604,35 @@
       "input": "Explicit project contracts; no inferred circuit/process values",
       "output": "Declared-scope reports or independent candidate; never implicit engineering approval",
       "validation_scope": "Software contracts; live GUI, faults and hardware are separately recorded in this release evidence.",
-      "sha256": "eca1a039f9b3f73a7cd8b4398e53f0d5ed3efe5b1aad6a95691f84c65e688d21",
+      "sha256": "68cafcdf797ef15f130ed609dad38dfae05945684d633f54c6bf8a33ac42658f",
       "exit_codes": {
         "0": "Declared scope complete/preview; never automatic approval",
         "2": "BLOCKED; do not advance or manufacture"
+      }
+    },
+    {
+      "file": "scripts/schematic_svg_strokes.py",
+      "version": "R10.0-alpha.1",
+      "command": "Library for schematic_overlap.py: svg_strokes(svg_path, wires, ports) and check_strokes(strokes, name, findings)",
+      "input": "One kicad-cli sch export svg page, wire segments and hierarchical/global label anchors of the same sheet",
+      "output": "Read-only list of SVG strokes (text glyph, wire, port, symbol) and STROKE findings for strokes that touch",
+      "validation_scope": "Synthetic fixture (wire through body and through text) and one real four-sheet project on KiCad 10.0.7.",
+      "sha256": "67abdeee2a3c194bf79134e5b4a0cd70505c8a04dbd28777aeb088e16a19d4f2",
+      "exit_codes": {
+        "0": "Library only; findings go to the caller"
+      }
+    },
+    {
+      "file": "scripts/schematic_overlap.py",
+      "version": "R10.0-alpha.1",
+      "command": "python3 scripts/schematic_overlap.py --help",
+      "input": "Project directory, top .kicad_sch, kicad-cli path, optional per-sheet layout JSON from Konnect get_schematic_layout, pypdfium2 for --png",
+      "output": "Read-only JSON overlap report (sheet frames, out-of-frame objects, text pairs, exact stroke (ink) contacts, symbol pairs, label placement) and, with --png, one PNG per page; never an approval",
+      "validation_scope": "Synthetic positive/negative fixture, rotation probe and one real four-sheet project on KiCad 10.0.7; symbol outlines need live layout input.",
+      "sha256": "a51d089a0d964ee7c32e81dd21bcc8a557a3f8279372def82aa34e4c1c060985",
+      "exit_codes": {
+        "0": "No overlap or label placement finding detected in the available evidence",
+        "2": "Findings or BLOCKED; repair and rerun"
       }
     },
     {

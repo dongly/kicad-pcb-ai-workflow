@@ -67,7 +67,11 @@ def _composition(root, trees, spec, inputs):
     allow_labels=power.get('allow_rail_labels',[]) if isinstance(power,dict) else None
     if (not isinstance(allow_labels,list) or len(set(allow_labels)) != len(allow_labels) or
             not set(allow_labels).issubset(rails)):
-        raise ValueError('Only explicitly exempted power rails can use signal labels')
+        raise ValueError('allow_rail_labels must list only declared power rails')
+    # Power nets are drawn with native power: symbols only. No project
+    # exception lets a rail be wired by a label of any kind, global included.
+    if allow_labels:
+        raise ValueError('Power rails must use native power symbols; allow_rail_labels must be empty (no rail labels, no global labels)')
     native_powers=set();evidenced_rail_labels=[];layout_rectangles={}
     for name, tree in trees.items():
         page=pages[name]
@@ -128,11 +132,37 @@ def _composition(root, trees, spec, inputs):
             for label in children(tree,kind):
                 if len(label)>1 and label[1] in rails and label[1] not in allow_labels:
                     evidenced_rail_labels.append((name,kind,label[1]))
+    label_scope=spec.get('labels')
+    if label_scope is not None:
+        # Global labels are board-wide by nature and hide the interface. The
+        # project must justify each one; everything else crosses sheets only
+        # through hierarchical labels bound to matching sheet pins.
+        if not isinstance(label_scope,dict) or label_scope.get('schema_version')!=1 or label_scope.get('prefer_hierarchy') is not True:
+            raise ValueError('Label scope policy requires schema_version=1 and prefer_hierarchy=true')
+        allowed=label_scope.get('allow_global_labels',[])
+        if (not isinstance(allowed,list) or len(set(allowed))!=len(allowed) or
+                any(not isinstance(x,str) or not x.strip() for x in allowed)):
+            raise ValueError('allow_global_labels must be unique explicit net names')
+        counts={};sheet_pins=0
+        for name,tree in trees.items():
+            counts[name]={'global_label':0,'hierarchical_label':0}
+            sheet_pins+=len(children(tree,'sheet')) and sum(len(children(s,'pin')) for s in children(tree,'sheet'))
+            for kind in ('global_label','hierarchical_label'):
+                for label in children(tree,kind):
+                    counts[name][kind]+=1
+                    if kind=='global_label' and (len(label)<2 or label[1] not in allowed):
+                        risk('LABEL_POLICY.GLOBAL',name+':'+str(label[1] if len(label)>1 else '?'),
+                             'Global label is not an allow-listed board-wide net',
+                             'Replace with a hierarchical label plus matching sheet pin (or a local label inside the sheet); keep the net identity.')
+        checks.append({'rule':'LABEL_POLICY','prefer_hierarchy':True,'allow_global_labels':allowed,
+                       'label_counts':counts,'sheet_pins':sheet_pins,
+                       'scope':'label kinds and allow list only; native XML/ERC must prove the hierarchy connectivity'})
     for rail in rails:
         if rail not in native_powers:
             risk('POWER_SYMBOL_POLICY.MISSING',rail,'Declared rail has no real power-library symbol on any sheet','Place native KiCad power symbol for the exact net; check exported native netlist.')
     for name,kind,rail in evidenced_rail_labels:
-        risk('POWER_SYMBOL_POLICY.LABEL',name+':'+rail,'Rail drawn using '+kind+' instead of project-required native power symbol','Use native KiCad power symbol; do not merge distinct rails.')
+        risk('POWER_SYMBOL_POLICY.LABEL',name+':'+rail,'Power rail "'+rail+'" drawn using '+kind+' instead of a native power symbol',
+             'Replace every rail label (local, hierarchical or global) with the native KiCad power symbol for the exact net; do not merge distinct rails.')
     checks.append({'rule':'POWER_SYMBOL_POLICY','required_rails':rails,'found_power_symbols':sorted(native_powers),
                    'scope':'symbol_types_and_labels_only; native XML/ERC must independently verify actual nets'})
     part=spec.get('partition',{})
@@ -211,15 +241,24 @@ def plan_partition(request):
     max_links=request.get('max_single_sheet_cross_connections',12)
     if any(isinstance(x,bool) or not isinstance(x,int) or x<0 for x in (links,max_links)):
         raise ValueError('Cross-module links must be nonnegative counts')
+    prefer=request.get('prefer_hierarchy',True)
+    if not isinstance(prefer,bool):raise ValueError('prefer_hierarchy must be an explicit boolean')
     forecast=circuit*allowance/usable
-    hierarchical=forecast>ratio or links>max_links
+    dense=forecast>ratio;busy=links>max_links
+    # Hierarchy is the default for more than one real functional module; a
+    # single page is an explicit, justified exception, not the lazy default.
+    split=prefer and len(modules)>1
+    hierarchical=dense or busy or split
     return {'schema_version':1,'status':'PAGE_PLAN_PREVIEW_NOT_APPLIED',
             'recommended_mode':'hierarchical' if hierarchical else 'single',
             'estimated_occupancy':round(forecast,4),'threshold':ratio,
             'module_ids':[m['id'] for m in modules],
             'pages':(['root_overview', *[m['id'] for m in modules]] if hierarchical else ['single_with_function_frames']),
-            'reasons':(['estimated_density_exceeds_target'] if forecast>ratio else []) +
-                      (['cross_module_links_exceed_target'] if links>max_links else []),
+            'reasons':(['estimated_density_exceeds_target'] if dense else []) +
+                      (['cross_module_links_exceed_target'] if busy else []) +
+                      (['multiple_functional_modules_prefer_hierarchy'] if split else []) +
+                      (['single_module_or_explicit_opt_out'] if not hierarchical else []),
+            'cross_sheet_interface':'hierarchical_label + sheet pin (global labels only for allow-listed board-wide nets)',
             'production_authorized':False,
             'limitations':['Estimated dimensions, not rendered KiCad geometry.',
                            'Hierarchical pin/label scopes must be verified after real editing.',

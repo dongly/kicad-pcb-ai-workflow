@@ -36,6 +36,7 @@
       ]
     }
   ],
+  "prefer_hierarchy": true,
   "cross_module_connections": 5,
   "max_single_sheet_cross_connections": 12,
   "max_occupancy": 0.72,

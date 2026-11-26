@@ -17,7 +17,7 @@ def parse(text):
                 if text[i]=='"':break
                 i+=1
             if i>=len(text):raise ValueError('Unterminated quoted string')
-            tokens.append(('string',json.loads(text[start:i+1])));i+=1;continue
+            tokens.append(('string',json.loads(text[start:i+1],strict=False)));i+=1;continue
         m=re.match(r'[^\s()"]+',text[i:])
         if not m:raise ValueError('Invalid schematic token')
         tokens.append(('atom',m.group()));i+=len(m.group())
