@@ -12,7 +12,7 @@
 
 ## 可执行的构图筛查
 
-对新建的原理图，先用 `schematic_style.py /project --plan-input page-plan.json` 取得只读的页面规划。只要存在多于一个功能模块，规划就会建议层次根图页加子图页；只有在记录了工程理由时才允许设置 `prefer_hierarchy=false`。只在已登记的工作项目内按该规划用 Konnect 写入：每个模块用 `add_hierarchical_sheet`，子图页内放层次标签，父图页内 `import_sheet_pins`/`validate_sheet_pins`，电源/地轨使用原生电源符号。简单电路与自包含单元电路要用真实导线实现引脚对引脚连接；只有离开方块或跨图页的连接才使用标签。Konnect 的 `connect_to_net`/`batch_connect_to_net` 在图页内网络保持 `label_type=net_label`；不要改用 `global_label`，并设置 `stub_length`，让标签落在导线内部而不是引脚端点上。保存后对整个层次运行 `schematic_overlap.py`；其发现具有阻断性。把真实的图框/注释禁布区、显式电源与地轨的原生电源符号，以及既有的功能单图页图框或已验证的层次子图页纳入约束。保存并导出后，在项目原理图风格策略中启用 `composition.required=true`，并运行既有的 G1 静态审查：其中会调用 `schematic_style.audit()`。缺失或过期的渲染边界清单会阻断构图筛查；视觉/原生 ERC 审查保持独立。详情：[原理图构图关卡](schematic-composition-gates.md)。
+对新建的原理图，先用 `schematic_style.py /project --plan-input page-plan.json` 取得只读的页面规划。只要存在多于一个功能模块，规划就会建议层次根图页加子图页；只有在记录了工程理由时才允许设置 `prefer_hierarchy=false`。只在已登记的工作项目内按该规划用 Konnect 写入：每个模块用 `add_hierarchical_sheet`，子图页内放层次标签，父图页内 `import_sheet_pins`/`validate_sheet_pins`，电源/地轨使用原生电源符号。简单电路与自包含单元电路要用真实导线实现引脚对引脚连接；只有离开方块或跨图页的连接才使用标签。Konnect 的 `connect_to_net`/`batch_connect_to_net` 在图页内网络保持 `label_type=net_label`；不要改用 `global_label`。普通元件引脚与父图中的图纸符号引脚一视同仁：需要网络标签时，先从引脚引出一段导线，再把标签锚点放在导线内部，绝不能直接放在引脚上。对 `connect_to_net`/`batch_connect_to_net`，设置 `stub_length`，使锚点位于导线上且锚点后仍有导线延伸。保存后对整个层次运行 `schematic_overlap.py`；其发现具有阻断性。把真实的图框/注释禁布区、显式电源与地轨的原生电源符号，以及既有的功能单图页图框或已验证的层次子图页纳入约束。保存并导出后，在项目原理图风格策略中启用 `composition.required=true`，并运行既有的 G1 静态审查：其中会调用 `schematic_style.audit()`。缺失或过期的渲染边界清单会阻断构图筛查；视觉/原生 ERC 审查保持独立。详情：[原理图构图关卡](schematic-composition-gates.md)。
 
 
 ## 强制的新符号批量预放置（只读候选关卡）
