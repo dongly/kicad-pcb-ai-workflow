@@ -1,0 +1,16 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/universal-workflow.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/universal-workflow.zh.md
+/r10-unified-cli-and-task-routing/start-with-the-smallest-relevant-interface:
+  en: 44e3391113243228
+  zh: 063a66d6a3e147d0
+/r10-unified-cli-and-task-routing/six-compatibility-groups-and-the-active-design-stages:
+  en: 163d33dbe0da2cda
+  zh: bb55e1a0401fad77
+/r10-unified-cli-and-task-routing/core-commands:
+  en: 8431eef9a36103a8
+  zh: 5f258f93cd75e22e
+/r10-unified-cli-and-task-routing/state-safety-and-evolution:
+  en: 32ec2e91759029df
+  zh: 2dac3763e05de9d1

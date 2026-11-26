@@ -1,0 +1,19 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/workspace-and-token-policy.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/workspace-and-token-policy.zh.md
+/r10-workspace-lifecycle-and-context-budget-policy/purpose-and-limits:
+  en: c1d903d1f1f71705
+  zh: b5720f58ab474ea1
+/r10-workspace-lifecycle-and-context-budget-policy/canonical-project-layout:
+  en: eac88763e5144bba
+  zh: 145cf1fc4c78ed8f
+/r10-workspace-lifecycle-and-context-budget-policy/when-to-create-a-candidate:
+  en: 552b7ba6e771f723
+  zh: 976fdcd787b8d252
+/r10-workspace-lifecycle-and-context-budget-policy/ai-context-rules-and-measurement:
+  en: d17979a75035d6ab
+  zh: 9bc2658753a1b981
+/r10-workspace-lifecycle-and-context-budget-policy/acceptance-and-rollback:
+  en: 88fa91fef9f7c915
+  zh: 26e2c1cc3c7fb531

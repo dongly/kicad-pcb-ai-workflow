@@ -1,0 +1,31 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/static-ai-review.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/static-ai-review.zh.md
+/independent-g1-schematic-and-g4-pcb-ai-review/responsibilities-and-evidence:
+  en: 6bdc89d58ebbe165
+  zh: 34ad093f7779330f
+/independent-g1-schematic-and-g4-pcb-ai-review/g1-review-procedure:
+  en: 902bda4106dde88e
+  zh: c4bf355cb06257fb
+/independent-g1-schematic-and-g4-pcb-ai-review/g4-review-procedure:
+  en: b155576a37c6578b
+  zh: cacc7f1949923d42
+/independent-g1-schematic-and-g4-pcb-ai-review/stage-preparation-and-on-demand-model-context:
+  en: 71c0768761958715
+  zh: 0dc006a4030824d1
+/independent-g1-schematic-and-g4-pcb-ai-review/gate-safety-and-current-version-binding:
+  en: de74c62c84551f2f
+  zh: 2841c85316674f62
+/independent-g1-schematic-and-g4-pcb-ai-review/mandatory-source-and-task-contracts:
+  en: 6f9ae6325d4cd0cc
+  zh: b5273fd006976bf1
+/independent-g1-schematic-and-g4-pcb-ai-review/g1-schematic-review-obligations:
+  en: 0f52b58d621372e0
+  zh: ca2ec15ff9b8f2e1
+/independent-g1-schematic-and-g4-pcb-ai-review/g4-pcb-review-obligations:
+  en: 46370aefb84af1db
+  zh: d076c70bf7acfd76
+/independent-g1-schematic-and-g4-pcb-ai-review/ai-report-dispositions-and-engineer-evidence:
+  en: 9604f3b2f592291d
+  zh: cc0debd4ef3aff91

@@ -1,0 +1,25 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/module-pcb.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/module-pcb.zh.md
+/pcb-stack-up-placement-routing-and-copper:
+  en: c684e214b3d81859
+  zh: 69fb021e30251032
+/pcb-stack-up-placement-routing-and-copper/rules-first-functional-module-layout-planning-r10-preview:
+  en: 2b3aef70fd41302d
+  zh: d156ec40190b78d6
+/pcb-stack-up-placement-routing-and-copper/jlcpcb-2-4-6-8-layer-factory-constraints-explicit-user-consent-before-g3:
+  en: 8870804cb8328e75
+  zh: 0f616fbd1a76ebe1
+/pcb-stack-up-placement-routing-and-copper/courtyard-is-not-copper-clearance-r10:
+  en: 8a6e30e75d035928
+  zh: 7fcc795fb8cd876b
+/pcb-stack-up-placement-routing-and-copper/fine-pitch-pad-escape-and-power-trunk:
+  en: c6bd69e84085d2f3
+  zh: f47cdedf26148d2f
+/pcb-stack-up-placement-routing-and-copper/freerouting-first-candidate-for-ordinary-nets-not-production-promoted:
+  en: 719da83a01b659ac
+  zh: 7aa6936f42186ca3
+/pcb-stack-up-placement-routing-and-copper/required-seven-stage-freerouting-path:
+  en: 2772a4b76af27afa
+  zh: 4d35005ca852c640

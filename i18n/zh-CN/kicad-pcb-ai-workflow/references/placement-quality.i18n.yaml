@@ -1,0 +1,25 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/placement-quality.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/placement-quality.zh.md
+/modular-pin-level-and-visual-pcb-placement-review/execution-order:
+  en: b9efabfa0ed44cbf
+  zh: 3d3cd817e4863e2a
+/modular-pin-level-and-visual-pcb-placement-review/four-evidence-classes:
+  en: 63a5a674ae94efae
+  zh: 60e0861c7b61f3fc
+/modular-pin-level-and-visual-pcb-placement-review/g3-pre-route-layout-only-versus-g4-post-route-drc:
+  en: 0c593720f75c4b77
+  zh: 0a45f387e61781c6
+/modular-pin-level-and-visual-pcb-placement-review/exact-policy-inputs-and-implementation-boundaries:
+  en: 69c65bad33d0acfc
+  zh: 6634160e893dddd2
+/modular-pin-level-and-visual-pcb-placement-review/exact-policy-inputs-and-implementation-boundaries/supported-constraints-and-verification-limits:
+  en: 20e368bd3c9434e5
+  zh: dd2a7db4e8900ab4
+/modular-pin-level-and-visual-pcb-placement-review/exact-policy-inputs-and-implementation-boundaries/pre-route-final-review-and-invalidation:
+  en: 4d32d8ba047e2e0e
+  zh: fbc2951e498a8b32
+/modular-pin-level-and-visual-pcb-placement-review/placement-prerequisite-effective-rules-and-module-zoning:
+  en: d6c71826bf73918f
+  zh: 4e4dbbe6412f1dee

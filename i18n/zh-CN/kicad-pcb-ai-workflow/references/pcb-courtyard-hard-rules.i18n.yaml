@@ -1,0 +1,16 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/pcb-courtyard-hard-rules.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/pcb-courtyard-hard-rules.zh.md
+/pcb-courtyard-first-placement-safety-native-geometry-preview:
+  en: 29fa24b56a22a706
+  zh: 17ffe0f91bf5a387
+/pcb-courtyard-first-placement-safety-native-geometry-preview/order-and-checks:
+  en: 579df83ade5d6e8b
+  zh: ada435fb31c85074
+/pcb-courtyard-first-placement-safety-native-geometry-preview/courtyard-clearance-semantics:
+  en: 493bbd8e5323bae7
+  zh: db82320b6bf77cb9
+/pcb-courtyard-first-placement-safety-native-geometry-preview/current-limits-and-no-false-approvals:
+  en: 065fc6de29fc9217
+  zh: 69391854e7e410b9

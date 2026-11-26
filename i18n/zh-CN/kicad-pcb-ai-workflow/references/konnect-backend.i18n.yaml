@@ -1,0 +1,16 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/konnect-backend.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/konnect-backend.zh.md
+/konnect-mcp-backend-connection-operation-and-verification-contract/distinguish-four-requests:
+  en: ec5c4233f1312da7
+  zh: 3d5c737b2dd4a422
+/konnect-mcp-backend-connection-operation-and-verification-contract/installation-and-identity:
+  en: c4b70a546355d5f1
+  zh: 67c469b84b7c4d81
+/konnect-mcp-backend-connection-operation-and-verification-contract/board-operation-loop:
+  en: 52eb08a21b13f836
+  zh: b18402dad51f8ad1
+/konnect-mcp-backend-connection-operation-and-verification-contract/special-conditions:
+  en: 64612c819f0a8b66
+  zh: 26a66aba334ff43c

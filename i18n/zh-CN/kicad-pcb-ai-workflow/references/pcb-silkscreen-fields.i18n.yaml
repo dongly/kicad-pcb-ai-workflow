@@ -1,0 +1,19 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/pcb-silkscreen-fields.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/pcb-silkscreen-fields.zh.md
+/placed-field-and-silkscreen-repair-case-tested-2026-11-21:
+  en: a474d3e35546c7d9
+  zh: 9451c8abc55dacb2
+/placed-field-and-silkscreen-repair-case-tested-2026-11-21/discover-the-actual-writer:
+  en: 5b80dcccbe79e295
+  zh: a10c21c3d67aa7c0
+/placed-field-and-silkscreen-repair-case-tested-2026-11-21/repair-loop:
+  en: b339a338bf9f7913
+  zh: 746c0e48c2cf13e2
+/placed-field-and-silkscreen-repair-case-tested-2026-11-21/saved-project-settings-can-be-stale:
+  en: 85ffd16e8f7555d4
+  zh: 3b9975775a7cec0b
+/placed-field-and-silkscreen-repair-case-tested-2026-11-21/what-the-example-proves:
+  en: a6c6b6586cfa0142
+  zh: a131699f71c7e169

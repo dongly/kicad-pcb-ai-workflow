@@ -1,0 +1,16 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/environment-onboarding.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/environment-onboarding.zh.md
+/environment-setup-and-daily-operation/prerequisites:
+  en: 357aba4f9b0648de
+  zh: 8c070560b03ea5fd
+/environment-setup-and-daily-operation/first-installation-and-smoke-tests:
+  en: 207499e3a06f803e
+  zh: 10764cdaf6d50389
+/environment-setup-and-daily-operation/daily-work-minimum-necessary-calls:
+  en: 7322bc08c1a0a6c2
+  zh: 9371858b01e59b6b
+/environment-setup-and-daily-operation/debugging-and-cross-platform-notes:
+  en: eb90984a9ddafdce
+  zh: 761fc5558dfd7e13

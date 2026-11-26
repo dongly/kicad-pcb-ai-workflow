@@ -1,0 +1,16 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/module-schematic.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/module-schematic.zh.md
+/schematic-design-and-pcb-synchronization:
+  en: 8b30a6e47ec581be
+  zh: e0b605eb4adb6dfd
+/schematic-design-and-pcb-synchronization/executable-composition-screening:
+  en: 408cb7ea5e8ce0d3
+  zh: d10f4d247befac31
+/schematic-design-and-pcb-synchronization/mandatory-new-symbol-batch-pre-placement-read-only-candidate-gate:
+  en: df94a50b0bd9baec
+  zh: 47aa825d55b7e033
+/schematic-design-and-pcb-synchronization/two-stage-planning-and-execution:
+  en: 689cca6e08eca57c
+  zh: b308775cb3875eea

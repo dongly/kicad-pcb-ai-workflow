@@ -1,0 +1,13 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/capabilities.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/capabilities.zh.md
+/capability-matrix-and-engineering-limitations-r10/implemented-and-bounded-functions:
+  en: 45b563eba3e69d30
+  zh: e744adc20fea30dc
+/capability-matrix-and-engineering-limitations-r10/not-automatically-proven:
+  en: 7731308eeb36f1d3
+  zh: 37b90c907b479593
+/capability-matrix-and-engineering-limitations-r10/version-policy:
+  en: cf110c398df6728c
+  zh: b740758ace436352

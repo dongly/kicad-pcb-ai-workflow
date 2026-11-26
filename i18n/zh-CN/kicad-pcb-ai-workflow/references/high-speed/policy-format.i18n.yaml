@@ -1,0 +1,10 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/high-speed/policy-format.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/high-speed/policy-format.zh.md
+/high-speed-and-pi-evidence-policy-schema-and-boundaries:
+  en: e40180c07c787f58
+  zh: 0ff0c24d70598ce6
+/high-speed-and-pi-evidence-policy-schema-and-boundaries/policy-and-evidence:
+  en: 83d9dcc176fd4cfe
+  zh: bb7d472154c14cb4

@@ -1,0 +1,28 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/schematic-composition-gates.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/schematic-composition-gates.zh.md
+/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets:
+  en: 98b41f761e09ab41
+  zh: 34d2e151910f89bc
+/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/mandatory-order-for-newly-authored-schematics:
+  en: ae37a653bd80ee8e
+  zh: 3d006f6aa50f5391
+/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/read-only-sheet-planning:
+  en: d6af5477bae81ba4
+  zh: cb28319b3d2c012b
+/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/composition-policy-and-evidence-manifest:
+  en: 40ee5fd225977cb5
+  zh: ad47b6bb9d665a35
+/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/what-this-upgrade-does-not-implement:
+  en: e901176347ecaefb
+  zh: c848376a8e8d932d
+/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/verification-and-upgrade-compatibility:
+  en: fea145fa0423df6b
+  zh: 6ce5e305614f82b3
+/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/native-geometry-migration-boundary:
+  en: 84c8170995da3dcc
+  zh: 937fef5e077e803a
+/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/overlap-and-label-placement-screen-schematic-overlap-py:
+  en: b3685ea9e025cd7b
+  zh: a5c04ece9b70afd6

@@ -1,0 +1,22 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/freerouting-primary-routing.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/freerouting-primary-routing.zh.md
+/freerouting-primary-routing-candidate-staged-engineering-contract-r10-preview:
+  en: 9b020b3847ab13e8
+  zh: a1b2727545965fbb
+/freerouting-primary-routing-candidate-staged-engineering-contract-r10-preview/decision-deterministic-autorouter-ai-planner-independent-kicad-authority:
+  en: 04081b815e8f2aa3
+  zh: e44badfef098a02f
+/freerouting-primary-routing-candidate-staged-engineering-contract-r10-preview/seven-stage-routing-orchestration:
+  en: 82d0d7b22006c49d
+  zh: 384be05d246a998e
+/freerouting-primary-routing-candidate-staged-engineering-contract-r10-preview/rule-placement-and-actual-capability-boundaries:
+  en: 683fb6746169ab2c
+  zh: 32aa107d1ebd0773
+/freerouting-primary-routing-candidate-staged-engineering-contract-r10-preview/minimal-gated-external-cli-example-not-an-authorization-to-release:
+  en: bd21e5ccd5ef58ad
+  zh: c9309978a2b35644
+/freerouting-primary-routing-candidate-staged-engineering-contract-r10-preview/promotion-gate:
+  en: c2f70aaaf8bcdbaf
+  zh: ec5feb011f6dccf7

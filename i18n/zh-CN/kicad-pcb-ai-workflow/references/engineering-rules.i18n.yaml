@@ -1,0 +1,31 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/engineering-rules.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/engineering-rules.zh.md
+/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs:
+  en: 3f0f3388d639a47c
+  zh: e96ed9ecc793d839
+/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/1-twenty-five-rule-repairs-and-their-validation-boundaries:
+  en: 0a60b2b119228260
+  zh: 077554ad2ed977d5
+/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/2-quantified-product-level-acceptance-profile:
+  en: d4cf025f07e98fc2
+  zh: d4989c179401d1ed
+/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/2-quantified-product-level-acceptance-profile/stackup-and-impedance:
+  en: e1473cd90d8c07ee
+  zh: 8eaa05f9e3682eda
+/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/2-quantified-product-level-acceptance-profile/high-speed-and-differential-links:
+  en: f3f9a90831c2f998
+  zh: 2f35d05fc72da3c0
+/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/2-quantified-product-level-acceptance-profile/power-thermal-and-safety:
+  en: 17e12a77d3f3d873
+  zh: 4ac9ad90d003b683
+/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/3-legacy-release-classes-versus-r10-workflow:
+  en: bed52ba6ac58fa87
+  zh: be76478d790f0546
+/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/4-final-copper-manufacturing-evidence-and-risk-closure:
+  en: 0c61dc524b2660ca
+  zh: 3741c9da0db53813
+/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/5-manufacturer-and-official-technical-basis:
+  en: cdc24156b3b7bec6
+  zh: 4f9817c18fa760d2

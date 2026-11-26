@@ -1,0 +1,67 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/latest-complete-workflow.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/latest-complete-workflow.zh.md
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries:
+  en: e3e6c167887655f7
+  zh: 5f847ccfc3dff958
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/architecture-and-authority:
+  en: fc69bf5a794cebdc
+  zh: 92afddd69b2b47a6
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/device-knowledge-is-shared-engineering-acceptance-is-not:
+  en: d157b3b74b8ba28b
+  zh: 7ba606a48b303274
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/01-environment-and-project-protection-environment:
+  en: 71133a2516b506d7
+  zh: 2ea5fbdefc29d163
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/02-product-requirements-and-system-architecture-requirements:
+  en: c57624bd462e97c1
+  zh: 46cf7882a7e7b0ca
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/03-official-manufacturer-evidence-and-reusable-device-cache-sources:
+  en: 9dccbcb5a70486ae
+  zh: 9d9937da881019ed
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/04-alternatives-dnp-and-risk-management-reserve:
+  en: c28ae269a8e830d2
+  zh: cdc1e49fe768d1e7
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/05-topology-first-schematic-creation-schematic:
+  en: 0f1f3719541da33e
+  zh: c3491f4baa5fbc0b
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/06-g1-independent-schematic-review-schematic-review:
+  en: 7f3191cb515de8fa
+  zh: 9c3f0405f99c4afd
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/07-g2-symbol-footprint-pin-mapping-footprints:
+  en: fe2dd4ddbc4815ac
+  zh: 5db2a2b9f5caf188
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/08-stack-up-and-effective-manufacturing-rules-stackup:
+  en: abd74bffc2de6c26
+  zh: 92c9012db0b126a2
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/09-g3-placement-and-physical-layout-review-placement:
+  en: 6e106d7c198f3ec1
+  zh: 12dd0bad4995359f
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/10-seven-stage-freerouting-prioritized-routing-and-ground-zone-completion-routing:
+  en: a27333e280b680a2
+  zh: 67e99c1ac5037b04
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/11-g4-final-saved-pcb-review-pcb-review:
+  en: 41b76ff9e206dfaf
+  zh: f094a4e3656380dd
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/12-dfx-npi-pre-export-npi:
+  en: ce226fe11040102a
+  zh: 4db22e4c8f132168
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/13-frozen-manufacturing-candidate-manufacturing:
+  en: 10c28860871d6544
+  zh: f25c20e13b6ba334
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/14-factory-cam-eq-and-production-approval-cam-release-external:
+  en: c2b22fd11f6f4396
+  zh: aa479de0dc686329
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/15-prototype-evaluation-prototype-external:
+  en: 7a92df6f410914f3
+  zh: b0c2d0c476366bdf
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/node-by-node-execution/16-eco-and-archive-eco-external:
+  en: b3f08c25b33bf5ee
+  zh: 262e4acdc780855a
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/failure-handling:
+  en: 895949aa9a813882
+  zh: 4daa988525c5370f
+/r10-complete-engineering-workflow-16-nodes-g1-g4-and-evidence-boundaries/what-the-scripts-do-not-prove:
+  en: 5e3cc7c8bb379d3b
+  zh: 8cd624f030714ac2

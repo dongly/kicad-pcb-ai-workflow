@@ -1,0 +1,28 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/constraint-routing.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/constraint-routing.zh.md
+/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/plan-versus-execution:
+  en: 81fa1b5eae53ef96
+  zh: ff122db7b9f90e43
+/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/required-request-inputs:
+  en: 7e77a93008b11d31
+  zh: 5bdafaff74bb623a
+/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/failure-and-controlled-recovery:
+  en: 94cd7801ae765c13
+  zh: eb1c78d9fddb672c
+/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/exact-request-and-source-binding-contract:
+  en: 267d617f27f682e4
+  zh: 17f8a29360049291
+/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/backend-registration-and-acceptance:
+  en: 2c63619b461c3e89
+  zh: 5b6f612ee8cc2751
+/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/backend-registration-and-acceptance/failure-handling-and-fallback:
+  en: 1a5db57d52c6fce0
+  zh: af3ace90d0bf9e59
+/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/power-traces-tabulated-main-width-0-254-mm-and-controlled-pad-escapes:
+  en: a6dd558817394e90
+  zh: 6747f1eed943d04c
+/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/r10-staged-freerouting-primary-candidate:
+  en: 8b52f7856608a7b0
+  zh: 1c4f67e1aef8f6fe

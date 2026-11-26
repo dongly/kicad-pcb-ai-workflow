@@ -37,7 +37,7 @@ verify-translation-pairing / CONTRIBUTING.i18n.yaml 约定）。
 
 每个译本旁有同名 `.i18n.yaml` 账本：按英文标题的 slug 层级路径分节
 （重复键加 `~2`），每节记录 en/zh 两侧 16 位 hex（sha256 前 64 位）哈希，
-frontmatter 与代码块、生成区域之外的内容参与哈希。
+frontmatter 与代码块、生成区域之外的原始文本片段参与哈希；CRLF 统一为 LF 后计算，空行和行尾空白保留。
 改动任一侧后，重新生成账本：
 
 ```

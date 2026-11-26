@@ -1,0 +1,7 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/module-manufacturing.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/module-manufacturing.zh.md
+/dfx-npi-and-manufacturing-candidate:
+  en: 650a4d2f8cea5d9f
+  zh: 781401648b55b2dc

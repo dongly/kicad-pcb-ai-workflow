@@ -1,0 +1,22 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/schematic-preplacement.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/schematic-preplacement.zh.md
+/schematic-pre-placement-topology-space-reservation-trial-routes-gate:
+  en: 206c90b8e943296d
+  zh: 9990acd7b97a26e2
+/schematic-pre-placement-topology-space-reservation-trial-routes-gate/required-order-before-any-new-symbol-placement:
+  en: 6496a57129bdc100
+  zh: dda765a0d84a2ebd
+/schematic-pre-placement-topology-space-reservation-trial-routes-gate/read-only-cli-workflow-commands:
+  en: 0c20a47ad219164f
+  zh: 1e9d818bd11bf22e
+/schematic-pre-placement-topology-space-reservation-trial-routes-gate/request-v1-contract-abbreviated-illustrative-only:
+  en: 2b6b9747186c4534
+  zh: 8d076c914e2e6dac
+/schematic-pre-placement-topology-space-reservation-trial-routes-gate/engineering-limitations-and-acceptance:
+  en: 8b5719767bdb5d41
+  zh: 5194f85fc22e70da
+/schematic-pre-placement-topology-space-reservation-trial-routes-gate/two-stage-update-hard-vs-soft:
+  en: 368fba6b35181ec5
+  zh: 7acc2aa07e3fb56d

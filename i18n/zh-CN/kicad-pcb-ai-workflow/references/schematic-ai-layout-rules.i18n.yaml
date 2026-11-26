@@ -1,0 +1,43 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/schematic-ai-layout-rules.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/schematic-ai-layout-rules.zh.md
+/topology-driven-schematic-drawing-and-verifiable-page-geometry:
+  en: 04e067fdc56e63c9
+  zh: 44c77854b1f36b12
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/0-design-goal-required-inputs-and-prohibited-shortcuts:
+  en: 927a7b2448c1f241
+  zh: c45c129336c9666f
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/1-l0-l5-precedence-and-disposition:
+  en: ca6f2b72ff5624e0
+  zh: 300451851618305e
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/2-convert-topology-into-a-readable-page:
+  en: 7906543f0ab7db3f
+  zh: 40e54404bb7bf8c1
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/3-l1-exact-geometric-definitions:
+  en: 31b84bcd4301ad20
+  zh: 54041275e22da1f6
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/4-l2-semantic-layout-by-circuit-role:
+  en: d1346e345cb4d41e
+  zh: 40324478009a8438
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/5-l3-per-sheet-archetypes:
+  en: 3cb071c2b8b805c0
+  zh: 22224c4dc6998754
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/6-deterministic-conflict-resolution:
+  en: 33121485a7591005
+  zh: f6828ac04d0ae3ac
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/7-l4-optimization-without-changing-the-circuit:
+  en: 9a9094168bc50eed
+  zh: c1edc3efbba14854
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/8-l5-evidence-matrix-and-implementation-honesty:
+  en: b25e11980f970aa1
+  zh: f8f032c1086dca3f
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/9-execution-rollback-and-completion:
+  en: ea51a21762b6fc34
+  zh: 44f68582b9d49067
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/10-integration-and-adversarial-test-requirements:
+  en: e5d6e63d00351c5a
+  zh: 71565e952e749630
+/topology-driven-schematic-drawing-and-verifiable-page-geometry/executable-r10-composition-extension:
+  en: 11833cf967e5fea7
+  zh: c6904d6dec05e49a

@@ -14,12 +14,12 @@
 *.csv text eol=lf
 *.txt text eol=lf
 i18n/** text eol=lf
-*.zip binary
-*.png binary
+*.zip binary -working-tree-encoding
+*.png binary -working-tree-encoding
 # Payload tree keeps its own pin (same effect as the globs above).
 kicad-pcb-ai-workflow/** text eol=lf
 # Native fixture/provenance hashes bind exact exported bytes on every platform.
 # These exception lines must stay LAST: later gitattributes lines override
 # earlier ones, and the serializers' CRLF/tab-only bytes are evidence, not style.
-development/fixtures/led-8x8-12v/** -text -whitespace
-development/konnect-field-extension/pcb_fields.rs -text
+development/fixtures/led-8x8-12v/** -text -whitespace -working-tree-encoding
+development/konnect-field-extension/pcb_fields.rs -text -working-tree-encoding

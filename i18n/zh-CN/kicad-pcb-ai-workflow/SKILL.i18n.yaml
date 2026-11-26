@@ -1,0 +1,22 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/SKILL.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/SKILL.zh.md
+/preamble:
+  en: ab2f17cb4574f0b0
+  zh: 17c0ed1616cd3ed7
+/kicad-pcb-ai-skill-r10-single-workspace-minimal-context/non-negotiable-execution-rules:
+  en: 21f05a3318b0321e
+  zh: 11f50539c89182f9
+/kicad-pcb-ai-skill-r10-single-workspace-minimal-context/schematic-composition-checks-new-designs:
+  en: 833d4355c561d7cc
+  zh: 5de8f6cd1ac85797
+/kicad-pcb-ai-skill-r10-single-workspace-minimal-context/mandatory-pcb-routing-sequence-seven-stages-freerouting-2-5-0-scoped:
+  en: f0a0b379be2934a7
+  zh: dfc616c39aae5073
+/kicad-pcb-ai-skill-r10-single-workspace-minimal-context/task-based-reference-routing:
+  en: 74ef94cb10ae37ee
+  zh: a00418c6a2e14d53
+/kicad-pcb-ai-skill-r10-single-workspace-minimal-context/workspace-structure:
+  en: 63fa934414c594a4
+  zh: d5bd3b069aeac16a

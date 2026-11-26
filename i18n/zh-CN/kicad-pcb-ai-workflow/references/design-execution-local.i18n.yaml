@@ -1,0 +1,22 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/design-execution-local.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/design-execution-local.zh.md
+/r10-executable-design-policy-and-planned-work:
+  en: d660208f60745b71
+  zh: 6b5c837185b63722
+/r10-executable-design-policy-and-planned-work/before-layout-two-level-engineering-rules:
+  en: dd52196987113a9d
+  zh: 45b10675c41b46e7
+/r10-executable-design-policy-and-planned-work/topology-first-schematic:
+  en: a45c479c7f81305f
+  zh: 485af1e42d8bb0da
+/r10-executable-design-policy-and-planned-work/placement-proposed-eight-part-control-loop:
+  en: 29b629671d551eff
+  zh: 6a3d2343438cc532
+/r10-executable-design-policy-and-planned-work/routing-seven-verified-stages:
+  en: 44d030a3d3f82f39
+  zh: a1c72ded30750ec4
+/r10-executable-design-policy-and-planned-work/reliability:
+  en: 63a206bafcba21dc
+  zh: bc6a65de85257323

@@ -1,0 +1,10 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/reserve-options.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/reserve-options.zh.md
+/source-backed-reserve-options-dnp-and-testability:
+  en: 7d4fee3935727f6c
+  zh: 1670447db0918c84
+/source-backed-reserve-options-dnp-and-testability/three-phase-review:
+  en: fada5fc55547cb45
+  zh: 9ca4e835db27370f

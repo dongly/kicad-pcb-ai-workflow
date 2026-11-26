@@ -1,0 +1,22 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/device-knowledge.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/device-knowledge.zh.md
+/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/one-validated-knowledge-item-many-projects-and-design-stages:
+  en: a0bc3d802761b5c8
+  zh: ef89b768fb1df354
+/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/node-03-strict-cache-first-order:
+  en: 2cf59ec0d71f8574
+  zh: 4aa99705887f9b11
+/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/reuse-across-four-independent-design-gates:
+  en: 87a06368bb4c606e
+  zh: 262c0ca57826558f
+/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/safety-licensing-and-precision:
+  en: d5ad5ff820c76ab9
+  zh: 2058be4501768d92
+/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/exact-cache-first-procedure-and-immutable-source-validation:
+  en: 1ba9366e2a1e6623
+  zh: cf3bcaf4ee0fdf40
+/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/exact-cache-first-procedure-and-immutable-source-validation/command-examples-preview-unless-explicitly-applying-a-safe-new-file:
+  en: 8528e05f1a876f74
+  zh: ebd64c74d1396ab4

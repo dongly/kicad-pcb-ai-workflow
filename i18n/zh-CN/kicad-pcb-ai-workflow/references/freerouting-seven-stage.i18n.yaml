@@ -1,0 +1,31 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/freerouting-seven-stage.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/freerouting-seven-stage.zh.md
+/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview:
+  en: ef1fe3ab854153ea
+  zh: b5f4f71bb7b3396e
+/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/immutable-stages-and-ownership:
+  en: 1b7d3d3ab72f7ccf
+  zh: f0aec79afddeb5f9
+/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/practical-use:
+  en: fe4c55ebd11168a1
+  zh: b995a1506abd28da
+/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/practical-use/plan-sample-route-plan-config-json:
+  en: 2cd1f6179f1d259c
+  zh: a286ca11d19e34d0
+/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/practical-use/review-sample-route-import-config-json:
+  en: e530c26161933890
+  zh: edd29c34ba74d766
+/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/practical-use/commands:
+  en: 1c4de867e7bf806a
+  zh: d8ea3ed4d0eb3258
+/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/freerouting-2-5-0-fanout-and-optimization-safety:
+  en: e76825733a5e8c33
+  zh: 5286df6b0f9fff47
+/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/mandatory-native-netclass-membership-proof-r10-protected-gnd-fix:
+  en: b63414a12650184c
+  zh: cc9ac16167f2a025
+/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/important-limitations-and-test-gate:
+  en: 6484857e2567b676
+  zh: 5e0fbf4d0fe82a68

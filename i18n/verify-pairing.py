@@ -11,8 +11,10 @@ Conventions (see i18n/TRANSLATION-RULES.md):
 - sections:  YAML frontmatter is the preamble; every ATX heading starts a new
   section; fenced code blocks and i18n:generated regions are excluded from
   hashes. Code blocks and generated regions must be byte-identical on both
-  sides. Blank lines and trailing whitespace are ignored when hashing prose.
-- hash:      sha256 of the section's non-blank lines joined with \n, first 16 hex.
+  sides. Section text is hashed as original line slices after CRLF-to-LF
+  normalization; blank lines and trailing whitespace are preserved.
+- hash:      sha256 of the section's original text lines joined with \n after
+             CRLF-to-LF normalization, first 16 hex; whitespace is preserved.
 - keys:      slug path built from ENGLISH headings (lowercase, non [a-z0-9] -> '-',
   trimmed, empty -> 'section'); duplicate keys get ~2, ~3 suffixes.
 
@@ -71,20 +73,12 @@ def parse_md(text: str):
         if not fm_lines:  # unterminated frontmatter: treat whole file as body
             fm_lines, body = [], lines
 
-    sections = [(None, [])]
+    sections = [(None, fm_lines.copy())]
     code_regions = []
     gen_regions = []
     fence_char, fence_len, in_fence = "", 0, False
     in_gen = False
     gen_buf, code_buf = [], []
-
-    def clean(seq):
-        out = []
-        for l in seq:
-            l = l.rstrip()
-            if l:
-                out.append(l)
-        return out
 
     for raw in body:
         line = raw.rstrip("\n")
@@ -123,8 +117,6 @@ def parse_md(text: str):
     if code_buf:
         code_regions.append("\n".join(code_buf))
 
-    fm_clean = clean(fm_lines)
-    sections[0] = (None, fm_clean if fm_clean else [])
     return sections, code_regions, gen_regions
 
 
@@ -145,11 +137,15 @@ def build_records(en_path: Path, zh_path: Path):
 
     en_headings = [h for h, _ in en_sections if h is not None]
     zh_headings = [h for h, _ in zh_sections if h is not None]
+    en_levels = [len(h) - len(h.lstrip("#")) for h in en_headings]
+    zh_levels = [len(h) - len(h.lstrip("#")) for h in zh_headings]
     if len(en_headings) != len(zh_headings):
         problems.append(
             f"heading count mismatch: en={len(en_headings)} zh={len(zh_headings)} "
             f"(en headings: {en_headings[:6]}{'...' if len(en_headings) > 6 else ''})"
         )
+    elif en_levels != zh_levels:
+        problems.append(f"heading level/order mismatch: en={en_levels} zh={zh_levels}")
 
     if len(en_code) != len(zh_code):
         problems.append(f"code block count mismatch: en={len(en_code)} zh={len(zh_code)}")
@@ -184,7 +180,7 @@ def build_records(en_path: Path, zh_path: Path):
             base = f"{base}~{seen[base]}"
         else:
             seen[base] = 1
-        if not en_lines and not zh_lines:
+        if not any(line.strip() for line in en_lines) and not any(line.strip() for line in zh_lines):
             continue
         keys.append(base)
         en_hashes.append(section_hash(en_lines))
@@ -262,6 +258,17 @@ def main(argv=None) -> int:
                 print(f"NO-RECORD  {zh_rel(p)}")
             else:
                 keys, eh, zh_h, problems = build_records(en_path, p)
+                try:
+                    rec, _ = parse_sidecar(sc)
+                except ValueError:
+                    rec = None
+                    problems.append("duplicate section key in sidecar")
+                if rec is None:
+                    problems.append("invalid or missing sidecar")
+                else:
+                    expected = {k: {"en": eh[i], "zh": zh_h[i]} for i, k in enumerate(keys)}
+                    if rec != expected or render_sidecar(en_rel, zh_rel(p), keys, eh, zh_h) != sc.read_text(encoding="utf-8"):
+                        problems.append("sidecar hashes or canonical format are stale")
                 status = "STALE" if problems else "OK"
                 print(f"{status:9}  {zh_rel(p)}")
         return 0

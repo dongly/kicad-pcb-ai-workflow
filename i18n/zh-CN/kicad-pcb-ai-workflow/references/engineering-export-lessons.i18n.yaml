@@ -1,0 +1,19 @@
+# Bilingual-pair consistency record for kicad-pcb-ai-workflow/references/engineering-export-lessons.md: per heading section, a hash of
+# its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/engineering-export-lessons.zh.md
+/engineering-export-checks-learned-from-the-single-copper-led-case:
+  en: 9d7c89b3beaa37fd
+  zh: ed130e7e7abeda4a
+/engineering-export-checks-learned-from-the-single-copper-led-case/bind-the-exact-source:
+  en: 063bee42de46e5af
+  zh: 8d8541aa45480938
+/engineering-export-checks-learned-from-the-single-copper-led-case/physical-copper-count-and-native-metadata-differ:
+  en: fb155f4fa82cf91d
+  zh: cffc046bc7606dd3
+/engineering-export-checks-learned-from-the-single-copper-led-case/bom-mask-and-paste-agree-with-actual-objects:
+  en: 7c30b755431f4a20
+  zh: 577002429c8bdc7f
+/engineering-export-checks-learned-from-the-single-copper-led-case/validate-files-not-just-successful-subprocesses:
+  en: 5e5ae3f71f9b1f54
+  zh: 2bcd24fa4fe32201
