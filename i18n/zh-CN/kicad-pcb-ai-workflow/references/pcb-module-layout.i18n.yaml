@@ -2,21 +2,21 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/pcb-module-layout.zh.md
-/rules-first-pcb-module-placement-planner-r10-preview/required-engineering-order:
+/rules_first_pcb_module_placement_planner_r10_preview/required_engineering_order:
   en: 93dc72d320f2bf08
   zh: b48e1b7e93fb1cb0
-/rules-first-pcb-module-placement-planner-r10-preview/input-contracts-and-commands:
+/rules_first_pcb_module_placement_planner_r10_preview/input_contracts_and_commands:
   en: 7c3dbcbbd5a21e14
   zh: 60cdedeed81219d2
-/rules-first-pcb-module-placement-planner-r10-preview/limits:
+/rules_first_pcb_module_placement_planner_r10_preview/limits:
   en: dde8fc71662b6f27
   zh: ead3af6d2cb04c65
-/rules-first-pcb-module-placement-planner-r10-preview/mandatory-jlcpcb-user-approval-before-any-g3-layout-plan:
+/rules_first_pcb_module_placement_planner_r10_preview/mandatory_jlcpcb_user_approval_before_any_g3_layout_plan:
   en: a02c290ea651e594
   zh: 2629a9027c6c5079
-/rules-first-pcb-module-placement-planner-r10-preview/native-courtyard-collision-and-placement-safe-drc-pre-screen:
+/rules_first_pcb_module_placement_planner_r10_preview/native_courtyard_collision_and_placement_safe_drc_pre_screen:
   en: c17f526c096500d7
   zh: e405a5a3d39167a2
-/rules-first-pcb-module-placement-planner-r10-preview/mandatory-stage-boundary-g3-does-not-run-full-board-drc:
+/rules_first_pcb_module_placement_planner_r10_preview/mandatory_stage_boundary_g3_does_not_run_full_board_drc:
   en: f61e9a5a7382a291
   zh: d45a41b02fdb679b

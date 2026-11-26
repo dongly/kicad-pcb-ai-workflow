@@ -2,15 +2,15 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/environment-onboarding.zh.md
-/environment-setup-and-daily-operation/prerequisites:
+/environment_setup_and_daily_operation/prerequisites:
   en: 357aba4f9b0648de
   zh: 8c070560b03ea5fd
-/environment-setup-and-daily-operation/first-installation-and-smoke-tests:
+/environment_setup_and_daily_operation/first_installation_and_smoke_tests:
   en: 207499e3a06f803e
   zh: 10764cdaf6d50389
-/environment-setup-and-daily-operation/daily-work-minimum-necessary-calls:
+/environment_setup_and_daily_operation/daily_work_minimum_necessary_calls:
   en: 7322bc08c1a0a6c2
   zh: 9371858b01e59b6b
-/environment-setup-and-daily-operation/debugging-and-cross-platform-notes:
+/environment_setup_and_daily_operation/debugging_and_cross_platform_notes:
   en: eb90984a9ddafdce
   zh: 761fc5558dfd7e13

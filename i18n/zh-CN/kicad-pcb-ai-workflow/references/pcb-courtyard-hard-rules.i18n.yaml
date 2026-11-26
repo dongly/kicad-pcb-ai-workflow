@@ -2,15 +2,15 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/pcb-courtyard-hard-rules.zh.md
-/pcb-courtyard-first-placement-safety-native-geometry-preview:
+/pcb_courtyard_first_placement_safety_native_geometry_preview:
   en: 29fa24b56a22a706
   zh: 17ffe0f91bf5a387
-/pcb-courtyard-first-placement-safety-native-geometry-preview/order-and-checks:
+/pcb_courtyard_first_placement_safety_native_geometry_preview/order_and_checks:
   en: 579df83ade5d6e8b
   zh: ada435fb31c85074
-/pcb-courtyard-first-placement-safety-native-geometry-preview/courtyard-clearance-semantics:
+/pcb_courtyard_first_placement_safety_native_geometry_preview/courtyard_clearance_semantics:
   en: 493bbd8e5323bae7
   zh: db82320b6bf77cb9
-/pcb-courtyard-first-placement-safety-native-geometry-preview/current-limits-and-no-false-approvals:
+/pcb_courtyard_first_placement_safety_native_geometry_preview/current_limits_and_no_false_approvals:
   en: 065fc6de29fc9217
   zh: 69391854e7e410b9

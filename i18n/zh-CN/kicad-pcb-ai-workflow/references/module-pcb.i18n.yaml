@@ -2,24 +2,24 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/module-pcb.zh.md
-/pcb-stack-up-placement-routing-and-copper:
+/pcb_stack_up_placement_routing_and_copper:
   en: c684e214b3d81859
   zh: 69fb021e30251032
-/pcb-stack-up-placement-routing-and-copper/rules-first-functional-module-layout-planning-r10-preview:
+/pcb_stack_up_placement_routing_and_copper/rules_first_functional_module_layout_planning_r10_preview:
   en: 2b3aef70fd41302d
   zh: d156ec40190b78d6
-/pcb-stack-up-placement-routing-and-copper/jlcpcb-2-4-6-8-layer-factory-constraints-explicit-user-consent-before-g3:
+/pcb_stack_up_placement_routing_and_copper/jlcpcb_2_4_6_8_layer_factory_constraints_explicit_user_consent_before_g3:
   en: 8870804cb8328e75
   zh: 0f616fbd1a76ebe1
-/pcb-stack-up-placement-routing-and-copper/courtyard-is-not-copper-clearance-r10:
+/pcb_stack_up_placement_routing_and_copper/courtyard_is_not_copper_clearance_r10:
   en: 8a6e30e75d035928
   zh: 7fcc795fb8cd876b
-/pcb-stack-up-placement-routing-and-copper/fine-pitch-pad-escape-and-power-trunk:
+/pcb_stack_up_placement_routing_and_copper/fine_pitch_pad_escape_and_power_trunk:
   en: c6bd69e84085d2f3
   zh: f47cdedf26148d2f
-/pcb-stack-up-placement-routing-and-copper/freerouting-first-candidate-for-ordinary-nets-not-production-promoted:
+/pcb_stack_up_placement_routing_and_copper/freerouting_first_candidate_for_ordinary_nets_not_production_promoted:
   en: 719da83a01b659ac
   zh: 7aa6936f42186ca3
-/pcb-stack-up-placement-routing-and-copper/required-seven-stage-freerouting-path:
+/pcb_stack_up_placement_routing_and_copper/required_seven_stage_freerouting_path:
   en: 2772a4b76af27afa
   zh: 4d35005ca852c640

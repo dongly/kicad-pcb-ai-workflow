@@ -2,12 +2,12 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/capabilities.zh.md
-/capability-matrix-and-engineering-limitations-r10/implemented-and-bounded-functions:
+/capability_matrix_and_engineering_limitations_r10/implemented_and_bounded_functions:
   en: 45b563eba3e69d30
   zh: e744adc20fea30dc
-/capability-matrix-and-engineering-limitations-r10/not-automatically-proven:
+/capability_matrix_and_engineering_limitations_r10/not_automatically_proven:
   en: 7731308eeb36f1d3
   zh: 37b90c907b479593
-/capability-matrix-and-engineering-limitations-r10/version-policy:
+/capability_matrix_and_engineering_limitations_r10/version_policy:
   en: cf110c398df6728c
   zh: b740758ace436352

@@ -2,27 +2,27 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/constraint-routing.zh.md
-/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/plan-versus-execution:
+/script_planned_routing_request_contract_backend_acceptance_and_safe_fallback/plan_versus_execution:
   en: 81fa1b5eae53ef96
   zh: ff122db7b9f90e43
-/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/required-request-inputs:
+/script_planned_routing_request_contract_backend_acceptance_and_safe_fallback/required_request_inputs:
   en: 7e77a93008b11d31
   zh: 5bdafaff74bb623a
-/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/failure-and-controlled-recovery:
+/script_planned_routing_request_contract_backend_acceptance_and_safe_fallback/failure_and_controlled_recovery:
   en: 94cd7801ae765c13
   zh: eb1c78d9fddb672c
-/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/exact-request-and-source-binding-contract:
+/script_planned_routing_request_contract_backend_acceptance_and_safe_fallback/exact_request_and_source_binding_contract:
   en: 267d617f27f682e4
   zh: 17f8a29360049291
-/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/backend-registration-and-acceptance:
+/script_planned_routing_request_contract_backend_acceptance_and_safe_fallback/backend_registration_and_acceptance:
   en: 2c63619b461c3e89
   zh: 5b6f612ee8cc2751
-/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/backend-registration-and-acceptance/failure-handling-and-fallback:
+/script_planned_routing_request_contract_backend_acceptance_and_safe_fallback/backend_registration_and_acceptance/failure_handling_and_fallback:
   en: 1a5db57d52c6fce0
   zh: af3ace90d0bf9e59
-/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/power-traces-tabulated-main-width-0-254-mm-and-controlled-pad-escapes:
+/script_planned_routing_request_contract_backend_acceptance_and_safe_fallback/power_traces_tabulated_main_width_0_254_mm_and_controlled_pad_escapes:
   en: a6dd558817394e90
   zh: 6747f1eed943d04c
-/script-planned-routing-request-contract-backend-acceptance-and-safe-fallback/r10-staged-freerouting-primary-candidate:
+/script_planned_routing_request_contract_backend_acceptance_and_safe_fallback/r10_staged_freerouting_primary_candidate:
   en: 8b52f7856608a7b0
   zh: 1c4f67e1aef8f6fe

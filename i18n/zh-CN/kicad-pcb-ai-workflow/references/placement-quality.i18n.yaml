@@ -2,24 +2,24 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/placement-quality.zh.md
-/modular-pin-level-and-visual-pcb-placement-review/execution-order:
+/modular_pin_level_and_visual_pcb_placement_review/execution_order:
   en: b9efabfa0ed44cbf
   zh: 3d3cd817e4863e2a
-/modular-pin-level-and-visual-pcb-placement-review/four-evidence-classes:
+/modular_pin_level_and_visual_pcb_placement_review/four_evidence_classes:
   en: 63a5a674ae94efae
   zh: 60e0861c7b61f3fc
-/modular-pin-level-and-visual-pcb-placement-review/g3-pre-route-layout-only-versus-g4-post-route-drc:
+/modular_pin_level_and_visual_pcb_placement_review/g3_pre_route_layout_only_versus_g4_post_route_drc:
   en: 0c593720f75c4b77
   zh: 0a45f387e61781c6
-/modular-pin-level-and-visual-pcb-placement-review/exact-policy-inputs-and-implementation-boundaries:
+/modular_pin_level_and_visual_pcb_placement_review/exact_policy_inputs_and_implementation_boundaries:
   en: 69c65bad33d0acfc
   zh: 6634160e893dddd2
-/modular-pin-level-and-visual-pcb-placement-review/exact-policy-inputs-and-implementation-boundaries/supported-constraints-and-verification-limits:
+/modular_pin_level_and_visual_pcb_placement_review/exact_policy_inputs_and_implementation_boundaries/supported_constraints_and_verification_limits:
   en: 20e368bd3c9434e5
   zh: dd2a7db4e8900ab4
-/modular-pin-level-and-visual-pcb-placement-review/exact-policy-inputs-and-implementation-boundaries/pre-route-final-review-and-invalidation:
+/modular_pin_level_and_visual_pcb_placement_review/exact_policy_inputs_and_implementation_boundaries/pre_route_final_review_and_invalidation:
   en: 4d32d8ba047e2e0e
   zh: fbc2951e498a8b32
-/modular-pin-level-and-visual-pcb-placement-review/placement-prerequisite-effective-rules-and-module-zoning:
+/modular_pin_level_and_visual_pcb_placement_review/placement_prerequisite_effective_rules_and_module_zoning:
   en: d6c71826bf73918f
   zh: 4e4dbbe6412f1dee

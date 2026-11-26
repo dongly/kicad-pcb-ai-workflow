@@ -2,27 +2,27 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/README.zh.md
-/kicad-pcb-ai-r10-0-2:
+/kicad_pcb_ai_r10_0_2:
   en: 8beac60699f5319b
   zh: 8beac60699f5319b
-/kicad-pcb-ai-r10-0-2/r10:
+/kicad_pcb_ai_r10_0_2/r10:
   en: 6cf2475733743a50
   zh: 6cf2475733743a50
-/kicad-pcb-ai-r10-0-2/r10~2:
+/kicad_pcb_ai_r10_0_2/r10~2:
   en: 66df28f1bac6e92a
   zh: 66df28f1bac6e92a
-/kicad-pcb-ai-r10-0-2/16:
+/kicad_pcb_ai_r10_0_2/16:
   en: 23780d830ae87279
   zh: 23780d830ae87279
-/kicad-pcb-ai-r10-0-2/pcb-r10:
+/kicad_pcb_ai_r10_0_2/pcb_r10:
   en: 5c407b180d37722d
   zh: 5c407b180d37722d
-/kicad-pcb-ai-r10-0-2/section:
+/kicad_pcb_ai_r10_0_2/section:
   en: 190c656b421dca00
   zh: 190c656b421dca00
-/kicad-pcb-ai-r10-0-2/section~2:
+/kicad_pcb_ai_r10_0_2/section~2:
   en: a8d8e257dbf5a431
   zh: a8d8e257dbf5a431
-/kicad-pcb-ai-r10-0-2/section~3:
+/kicad_pcb_ai_r10_0_2/section~3:
   en: d24697e8de26f688
   zh: d24697e8de26f688

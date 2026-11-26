@@ -2,27 +2,27 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/schematic-composition-gates.zh.md
-/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets:
+/schematic_composition_title_block_clearance_power_symbols_and_adaptive_sheets:
   en: 98b41f761e09ab41
   zh: 34d2e151910f89bc
-/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/mandatory-order-for-newly-authored-schematics:
+/schematic_composition_title_block_clearance_power_symbols_and_adaptive_sheets/mandatory_order_for_newly_authored_schematics:
   en: ae37a653bd80ee8e
   zh: 3d006f6aa50f5391
-/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/read-only-sheet-planning:
+/schematic_composition_title_block_clearance_power_symbols_and_adaptive_sheets/read_only_sheet_planning:
   en: d6af5477bae81ba4
   zh: cb28319b3d2c012b
-/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/composition-policy-and-evidence-manifest:
+/schematic_composition_title_block_clearance_power_symbols_and_adaptive_sheets/composition_policy_and_evidence_manifest:
   en: 40ee5fd225977cb5
   zh: ad47b6bb9d665a35
-/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/what-this-upgrade-does-not-implement:
+/schematic_composition_title_block_clearance_power_symbols_and_adaptive_sheets/what_this_upgrade_does_not_implement:
   en: e901176347ecaefb
   zh: c848376a8e8d932d
-/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/verification-and-upgrade-compatibility:
+/schematic_composition_title_block_clearance_power_symbols_and_adaptive_sheets/verification_and_upgrade_compatibility:
   en: fea145fa0423df6b
   zh: 6ce5e305614f82b3
-/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/native-geometry-migration-boundary:
+/schematic_composition_title_block_clearance_power_symbols_and_adaptive_sheets/native_geometry_migration_boundary:
   en: 84c8170995da3dcc
   zh: 937fef5e077e803a
-/schematic-composition-title-block-clearance-power-symbols-and-adaptive-sheets/overlap-and-label-placement-screen-schematic-overlap-py:
+/schematic_composition_title_block_clearance_power_symbols_and_adaptive_sheets/overlap_and_label_placement_screen_schematic_overlap_py:
   en: b3685ea9e025cd7b
   zh: a5c04ece9b70afd6

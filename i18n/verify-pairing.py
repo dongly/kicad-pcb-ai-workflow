@@ -15,8 +15,8 @@ Conventions (see i18n/TRANSLATION-RULES.md):
   normalization; blank lines and trailing whitespace are preserved.
 - hash:      sha256 of the section's original text lines joined with \n after
              CRLF-to-LF normalization, first 16 hex; whitespace is preserved.
-- keys:      slug path built from ENGLISH headings (lowercase, non [a-z0-9] -> '-',
-  trimmed, empty -> 'section'); duplicate keys get ~2, ~3 suffixes.
+- keys:      slug path built from ENGLISH headings (lowercase, non [a-z0-9] -> '_',
+  trimmed, empty -> 'section'); '/' separates heading levels; duplicate keys get ~2, ~3 suffixes.
 
 Usage:
   python i18n/verify-pairing.py                  # verify all pairs
@@ -50,7 +50,7 @@ HEADER_TMPL = (
 
 
 def slug(text: str) -> str:
-    s = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+    s = re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
     return s or "section"
 
 

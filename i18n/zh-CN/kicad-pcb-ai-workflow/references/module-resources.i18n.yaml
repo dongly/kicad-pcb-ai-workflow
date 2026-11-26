@@ -2,6 +2,6 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/module-resources.zh.md
-/kicad-symbol-footprint-and-project-resource-integrity-g2:
+/kicad_symbol_footprint_and_project_resource_integrity_g2:
   en: d9217c0c1b8f0ee5
   zh: 9faf136b499c7f68

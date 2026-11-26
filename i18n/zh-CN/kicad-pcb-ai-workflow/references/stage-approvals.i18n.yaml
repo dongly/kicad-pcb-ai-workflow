@@ -2,6 +2,6 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/stage-approvals.zh.md
-/optional-six-group-human-stage-confirmation:
+/optional_six_group_human_stage_confirmation:
   en: 6dd3e64ec8474ad8
   zh: 75b1fb5b037ca6cc

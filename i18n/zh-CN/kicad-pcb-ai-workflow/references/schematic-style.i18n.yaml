@@ -2,9 +2,9 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/schematic-style.zh.md
-/schematic-page-hierarchy-and-visual-style:
+/schematic_page_hierarchy_and_visual_style:
   en: fdcccf2dcf31b8dc
   zh: d0ea49e2b8a078c4
-/schematic-page-hierarchy-and-visual-style/checkable-page-composition:
+/schematic_page_hierarchy_and_visual_style/checkable_page_composition:
   en: 91fc0869cc680a78
   zh: ab56bc14e1a5460a

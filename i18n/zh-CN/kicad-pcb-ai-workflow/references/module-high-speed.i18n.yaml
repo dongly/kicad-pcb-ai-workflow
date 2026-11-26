@@ -2,6 +2,6 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/module-high-speed.zh.md
-/on-demand-high-speed-rf-and-power-integrity-review:
+/on_demand_high_speed_rf_and_power_integrity_review:
   en: 10b8d0e0ae1efeac
   zh: 663168fa13052dfd

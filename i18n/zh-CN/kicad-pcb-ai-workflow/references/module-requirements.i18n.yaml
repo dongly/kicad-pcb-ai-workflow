@@ -2,6 +2,6 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/module-requirements.zh.md
-/requirements-system-architecture-and-manufacturer-evidence:
+/requirements_system_architecture_and_manufacturer_evidence:
   en: 882d18de431fe08b
   zh: 1153151c37edb900

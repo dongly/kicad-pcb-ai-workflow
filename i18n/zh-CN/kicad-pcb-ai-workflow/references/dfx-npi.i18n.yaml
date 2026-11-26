@@ -2,33 +2,33 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/dfx-npi.zh.md
-/dfx-npi-implementation-matrix-evidence-and-controlled-release:
+/dfx_npi_implementation_matrix_evidence_and_controlled_release:
   en: 7cb3d574194af2a2
   zh: 2265569a8a48047a
-/dfx-npi-implementation-matrix-evidence-and-controlled-release/1-lifecycle-and-ownership-mapping:
+/dfx_npi_implementation_matrix_evidence_and_controlled_release/1_lifecycle_and_ownership_mapping:
   en: b9ba2204a10cce98
   zh: 1dbab15f8c093cb4
-/dfx-npi-implementation-matrix-evidence-and-controlled-release/2-comprehensive-engineering-check-matrix:
+/dfx_npi_implementation_matrix_evidence_and_controlled_release/2_comprehensive_engineering_check_matrix:
   en: e343cd13e160098e
   zh: 501e84ceaf662a6c
-/dfx-npi-implementation-matrix-evidence-and-controlled-release/3-dependencies-setup-and-optional-external-tools:
+/dfx_npi_implementation_matrix_evidence_and_controlled_release/3_dependencies_setup_and_optional_external_tools:
   en: c051ef3164a3e3ab
   zh: 460bf45a2b2f13ce
-/dfx-npi-implementation-matrix-evidence-and-controlled-release/4-example-guarded-review-and-release-workflow:
+/dfx_npi_implementation_matrix_evidence_and_controlled_release/4_example_guarded_review_and_release_workflow:
   en: 87746184d5a8451d
   zh: dc69e6a5da2018d2
-/dfx-npi-implementation-matrix-evidence-and-controlled-release/4-example-guarded-review-and-release-workflow/manufacturer-reference-and-safe-freeze-handoff-r10:
+/dfx_npi_implementation_matrix_evidence_and_controlled_release/4_example_guarded_review_and_release_workflow/manufacturer_reference_and_safe_freeze_handoff_r10:
   en: b0fb7d69d8cc6665
   zh: 8aeb9b4ddf234de7
-/dfx-npi-implementation-matrix-evidence-and-controlled-release/4-example-guarded-review-and-release-workflow/external-evidence-and-review-contract:
+/dfx_npi_implementation_matrix_evidence_and_controlled_release/4_example_guarded_review_and_release_workflow/external_evidence_and_review_contract:
   en: a285009713c3a687
   zh: 6c62576fc9ed45a8
-/dfx-npi-implementation-matrix-evidence-and-controlled-release/4-example-guarded-review-and-release-workflow/eco-and-prototype-traceability:
+/dfx_npi_implementation_matrix_evidence_and_controlled_release/4_example_guarded_review_and_release_workflow/eco_and_prototype_traceability:
   en: 654d567e3cf8c02e
   zh: 72c379e4f765ab71
-/dfx-npi-implementation-matrix-evidence-and-controlled-release/5-rules-for-release-gating-and-failure-recovery:
+/dfx_npi_implementation_matrix_evidence_and_controlled_release/5_rules_for_release_gating_and_failure_recovery:
   en: 23ce126bc05d1ecc
   zh: b60f9ce450cf1849
-/dfx-npi-implementation-matrix-evidence-and-controlled-release/6-cross-references-and-authority:
+/dfx_npi_implementation_matrix_evidence_and_controlled_release/6_cross_references_and_authority:
   en: 6b42f65487334707
   zh: b6a819a9c4e6bd9c

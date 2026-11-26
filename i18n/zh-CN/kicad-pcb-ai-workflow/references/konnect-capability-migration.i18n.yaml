@@ -2,21 +2,21 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/konnect-capability-migration.zh.md
-/r10-konnect-mcp-migration-dynamic-discovery-and-a-single-active-eda-writer/policy:
+/r10_konnect_mcp_migration_dynamic_discovery_and_a_single_active_eda_writer/policy:
   en: 28928b4d507d8aaf
   zh: 0025db0f9b16416f
-/r10-konnect-mcp-migration-dynamic-discovery-and-a-single-active-eda-writer/risk-and-reusable-acceptance:
+/r10_konnect_mcp_migration_dynamic_discovery_and_a_single_active_eda_writer/risk_and_reusable_acceptance:
   en: f56c131b6c5d29ed
   zh: ad1fc6f7199b9c85
-/r10-konnect-mcp-migration-dynamic-discovery-and-a-single-active-eda-writer/operating-sequence:
+/r10_konnect_mcp_migration_dynamic_discovery_and_a_single_active_eda_writer/operating_sequence:
   en: 208c50398d1d3fa2
   zh: 2efdc549291817bb
-/r10-konnect-mcp-migration-dynamic-discovery-and-a-single-active-eda-writer/candidate-operation-and-freeze-handoff:
+/r10_konnect_mcp_migration_dynamic_discovery_and_a_single_active_eda_writer/candidate_operation_and_freeze_handoff:
   en: 8925c42f183214a9
   zh: 9d7e7245882e4622
-/r10-konnect-mcp-migration-dynamic-discovery-and-a-single-active-eda-writer/migration-limitations:
+/r10_konnect_mcp_migration_dynamic_discovery_and_a_single_active_eda_writer/migration_limitations:
   en: f85580e8e0f97dc1
   zh: 15764e5a5a82d7f0
-/r10-konnect-mcp-migration-dynamic-discovery-and-a-single-active-eda-writer/current-first-use-policy:
+/r10_konnect_mcp_migration_dynamic_discovery_and_a_single_active_eda_writer/current_first_use_policy:
   en: be66583332ef4d24
   zh: 68fc0cf4cbc9cca3

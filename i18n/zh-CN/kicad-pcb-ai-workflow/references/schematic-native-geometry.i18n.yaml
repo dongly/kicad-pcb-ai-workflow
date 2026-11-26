@@ -2,18 +2,18 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/schematic-native-geometry.zh.md
-/native-kicad-symbol-geometry-read-before-pre-placement:
+/native_kicad_symbol_geometry_read_before_pre_placement:
   en: 890e11bce829a825
   zh: b05d937f0692f6f9
-/native-kicad-symbol-geometry-read-before-pre-placement/automatic-source-lookup:
+/native_kicad_symbol_geometry_read_before_pre_placement/automatic_source_lookup:
   en: 4b366eb7745e8590
   zh: 84ff024cf9c0838e
-/native-kicad-symbol-geometry-read-before-pre-placement/practical-read-only-commands:
+/native_kicad_symbol_geometry_read_before_pre_placement/practical_read_only_commands:
   en: 0bf5ab5e9ae1ee33
   zh: d174245615bf9d79
-/native-kicad-symbol-geometry-read-before-pre-placement/what-is-exact-and-what-is-not:
+/native_kicad_symbol_geometry_read_before_pre_placement/what_is_exact_and_what_is_not:
   en: 07dedd9dc5e9765e
   zh: e28f14706cba33ba
-/native-kicad-symbol-geometry-read-before-pre-placement/what-is-exact-and-what-is-not/execution-contract:
+/native_kicad_symbol_geometry_read_before_pre_placement/what_is_exact_and_what_is_not/execution_contract:
   en: 51aae1b24c6fcd8f
   zh: d32d8f3a11d2c8ca

@@ -2,42 +2,42 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/schematic-ai-layout-rules.zh.md
-/topology-driven-schematic-drawing-and-verifiable-page-geometry:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry:
   en: 04e067fdc56e63c9
   zh: 44c77854b1f36b12
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/0-design-goal-required-inputs-and-prohibited-shortcuts:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/0_design_goal_required_inputs_and_prohibited_shortcuts:
   en: 927a7b2448c1f241
   zh: c45c129336c9666f
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/1-l0-l5-precedence-and-disposition:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/1_l0_l5_precedence_and_disposition:
   en: ca6f2b72ff5624e0
   zh: 300451851618305e
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/2-convert-topology-into-a-readable-page:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/2_convert_topology_into_a_readable_page:
   en: 7906543f0ab7db3f
   zh: 40e54404bb7bf8c1
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/3-l1-exact-geometric-definitions:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/3_l1_exact_geometric_definitions:
   en: 31b84bcd4301ad20
   zh: 54041275e22da1f6
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/4-l2-semantic-layout-by-circuit-role:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/4_l2_semantic_layout_by_circuit_role:
   en: d1346e345cb4d41e
   zh: 40324478009a8438
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/5-l3-per-sheet-archetypes:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/5_l3_per_sheet_archetypes:
   en: 3cb071c2b8b805c0
   zh: 22224c4dc6998754
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/6-deterministic-conflict-resolution:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/6_deterministic_conflict_resolution:
   en: 33121485a7591005
   zh: f6828ac04d0ae3ac
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/7-l4-optimization-without-changing-the-circuit:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/7_l4_optimization_without_changing_the_circuit:
   en: 9a9094168bc50eed
   zh: c1edc3efbba14854
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/8-l5-evidence-matrix-and-implementation-honesty:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/8_l5_evidence_matrix_and_implementation_honesty:
   en: b25e11980f970aa1
   zh: f8f032c1086dca3f
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/9-execution-rollback-and-completion:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/9_execution_rollback_and_completion:
   en: ea51a21762b6fc34
   zh: 44f68582b9d49067
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/10-integration-and-adversarial-test-requirements:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/10_integration_and_adversarial_test_requirements:
   en: e5d6e63d00351c5a
   zh: 71565e952e749630
-/topology-driven-schematic-drawing-and-verifiable-page-geometry/executable-r10-composition-extension:
+/topology_driven_schematic_drawing_and_verifiable_page_geometry/executable_r10_composition_extension:
   en: 11833cf967e5fea7
   zh: c6904d6dec05e49a

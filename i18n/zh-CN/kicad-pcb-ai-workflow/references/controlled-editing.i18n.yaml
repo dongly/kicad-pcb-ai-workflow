@@ -2,9 +2,9 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/controlled-editing.zh.md
-/historical-experimental-kicad-ipc-editing-bridge-disabled-for-active-writes:
+/historical_experimental_kicad_ipc_editing_bridge_disabled_for_active_writes:
   en: 17a80b793b5d2610
   zh: 84a7ce33b8c494da
-/historical-experimental-kicad-ipc-editing-bridge-disabled-for-active-writes/historical-prototype-contract:
+/historical_experimental_kicad_ipc_editing_bridge_disabled_for_active_writes/historical_prototype_contract:
   en: df482029d207b045
   zh: 1ce01661952f91c1

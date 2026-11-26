@@ -2,15 +2,15 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/design-intent.zh.md
-/schematic-design-intent-and-effective-pcb-constraints/intent-is-not-the-implemented-board:
+/schematic_design_intent_and_effective_pcb_constraints/intent_is_not_the_implemented_board:
   en: 8fbe2071430783ea
   zh: 5518c6d7af565e6e
-/schematic-design-intent-and-effective-pcb-constraints/signals-power-and-rf-constraints:
+/schematic_design_intent_and_effective_pcb_constraints/signals_power_and_rf_constraints:
   en: 7841572b882ea5a6
   zh: e3b0bef20be4ae51
-/schematic-design-intent-and-effective-pcb-constraints/apply-read-back-steps:
+/schematic_design_intent_and_effective_pcb_constraints/apply_read_back_steps:
   en: 7c2960581b96b760
   zh: 4c97ecb18ea766a3
-/schematic-design-intent-and-effective-pcb-constraints/limits:
+/schematic_design_intent_and_effective_pcb_constraints/limits:
   en: f3760c3a49b8a777
   zh: 5d1beda8a9c00ff1

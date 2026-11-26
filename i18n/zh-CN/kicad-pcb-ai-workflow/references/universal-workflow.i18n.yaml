@@ -2,15 +2,15 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/universal-workflow.zh.md
-/r10-unified-cli-and-task-routing/start-with-the-smallest-relevant-interface:
+/r10_unified_cli_and_task_routing/start_with_the_smallest_relevant_interface:
   en: 44e3391113243228
   zh: 063a66d6a3e147d0
-/r10-unified-cli-and-task-routing/six-compatibility-groups-and-the-active-design-stages:
+/r10_unified_cli_and_task_routing/six_compatibility_groups_and_the_active_design_stages:
   en: 163d33dbe0da2cda
   zh: bb55e1a0401fad77
-/r10-unified-cli-and-task-routing/core-commands:
+/r10_unified_cli_and_task_routing/core_commands:
   en: 8431eef9a36103a8
   zh: 5f258f93cd75e22e
-/r10-unified-cli-and-task-routing/state-safety-and-evolution:
+/r10_unified_cli_and_task_routing/state_safety_and_evolution:
   en: 32ec2e91759029df
   zh: 2dac3763e05de9d1

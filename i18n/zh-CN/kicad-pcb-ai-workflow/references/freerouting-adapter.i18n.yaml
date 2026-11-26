@@ -2,9 +2,9 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/freerouting-adapter.zh.md
-/optional-freerouting-v2-5-0-adapter-experimental:
+/optional_freerouting_v2_5_0_adapter_experimental:
   en: 6b27f98dbe8702f4
   zh: 8bd86e17aaacdea2
-/optional-freerouting-v2-5-0-adapter-experimental/r10-strict-candidate-input-guards:
+/optional_freerouting_v2_5_0_adapter_experimental/r10_strict_candidate_input_guards:
   en: 6776966a20b24758
   zh: 8fe8adb4cfaf1367

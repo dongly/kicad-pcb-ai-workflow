@@ -2,6 +2,6 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/module-environment.zh.md
-/environment-connection-and-workspace:
+/environment_connection_and_workspace:
   en: 3df5c151bbbeebc2
   zh: e5f330c21d3d0cff

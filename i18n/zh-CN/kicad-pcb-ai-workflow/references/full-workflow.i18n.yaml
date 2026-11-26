@@ -2,9 +2,9 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/full-workflow.zh.md
-/historical-16-node-workflow-compatibility-r9:
+/historical_16_node_workflow_compatibility_r9:
   en: 419bed5649b5a0a2
   zh: 15634a5a6521f9dc
-/historical-16-node-workflow-compatibility-r9/stage-mapping-retained-for-compatibility:
+/historical_16_node_workflow_compatibility_r9/stage_mapping_retained_for_compatibility:
   en: 051d79a5ebba9e82
   zh: 4c3def88d4a4616c

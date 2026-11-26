@@ -2,9 +2,9 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/high-speed/policy-format.zh.md
-/high-speed-and-pi-evidence-policy-schema-and-boundaries:
+/high_speed_and_pi_evidence_policy_schema_and_boundaries:
   en: e40180c07c787f58
   zh: 0ff0c24d70598ce6
-/high-speed-and-pi-evidence-policy-schema-and-boundaries/policy-and-evidence:
+/high_speed_and_pi_evidence_policy_schema_and_boundaries/policy_and_evidence:
   en: 83d9dcc176fd4cfe
   zh: bb7d472154c14cb4

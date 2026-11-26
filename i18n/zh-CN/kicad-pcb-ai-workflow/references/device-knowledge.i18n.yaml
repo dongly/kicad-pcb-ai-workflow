@@ -2,21 +2,21 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/device-knowledge.zh.md
-/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/one-validated-knowledge-item-many-projects-and-design-stages:
+/cache_first_manufacturer_device_knowledge_exact_part_source_and_stage_reuse/one_validated_knowledge_item_many_projects_and_design_stages:
   en: a0bc3d802761b5c8
   zh: ef89b768fb1df354
-/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/node-03-strict-cache-first-order:
+/cache_first_manufacturer_device_knowledge_exact_part_source_and_stage_reuse/node_03_strict_cache_first_order:
   en: 2cf59ec0d71f8574
   zh: 4aa99705887f9b11
-/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/reuse-across-four-independent-design-gates:
+/cache_first_manufacturer_device_knowledge_exact_part_source_and_stage_reuse/reuse_across_four_independent_design_gates:
   en: 87a06368bb4c606e
   zh: 262c0ca57826558f
-/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/safety-licensing-and-precision:
+/cache_first_manufacturer_device_knowledge_exact_part_source_and_stage_reuse/safety_licensing_and_precision:
   en: d5ad5ff820c76ab9
   zh: 2058be4501768d92
-/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/exact-cache-first-procedure-and-immutable-source-validation:
+/cache_first_manufacturer_device_knowledge_exact_part_source_and_stage_reuse/exact_cache_first_procedure_and_immutable_source_validation:
   en: 1ba9366e2a1e6623
   zh: cf3bcaf4ee0fdf40
-/cache-first-manufacturer-device-knowledge-exact-part-source-and-stage-reuse/exact-cache-first-procedure-and-immutable-source-validation/command-examples-preview-unless-explicitly-applying-a-safe-new-file:
+/cache_first_manufacturer_device_knowledge_exact_part_source_and_stage_reuse/exact_cache_first_procedure_and_immutable_source_validation/command_examples_preview_unless_explicitly_applying_a_safe_new_file:
   en: 8528e05f1a876f74
   zh: ebd64c74d1396ab4

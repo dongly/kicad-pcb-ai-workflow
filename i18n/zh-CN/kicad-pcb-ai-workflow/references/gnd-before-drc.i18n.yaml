@@ -2,18 +2,18 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/gnd-before-drc.zh.md
-/r10-gnd-first-pour-approved-stitching-refill-full-native-drc-g4:
+/r10_gnd_first_pour_approved_stitching_refill_full_native_drc_g4:
   en: 6e71be56974b5fce
   zh: 6b9d133c4dd7fb06
-/r10-gnd-first-pour-approved-stitching-refill-full-native-drc-g4/kicad-10-r10:
+/r10_gnd_first_pour_approved_stitching_refill_full_native_drc_g4/kicad_10_r10:
   en: 4998d19e88f24611
   zh: 4998d19e88f24611
-/r10-gnd-first-pour-approved-stitching-refill-full-native-drc-g4/actual-execution-separate-kicad-konnect-save-readback-snapshots:
+/r10_gnd_first_pour_approved_stitching_refill_full_native_drc_g4/actual_execution_separate_kicad_konnect_save_readback_snapshots:
   en: 8f46662fa5215990
   zh: 444bed626a1e56b5
-/r10-gnd-first-pour-approved-stitching-refill-full-native-drc-g4/example-ground-stage-config:
+/r10_gnd_first_pour_approved_stitching_refill_full_native_drc_g4/example_ground_stage_config:
   en: 3e362218029169c1
   zh: 3f8629df4c387c40
-/r10-gnd-first-pour-approved-stitching-refill-full-native-drc-g4/commands:
+/r10_gnd_first_pour_approved_stitching_refill_full_native_drc_g4/commands:
   en: ecd7c33919f813d0
   zh: ef6740df82b881e0

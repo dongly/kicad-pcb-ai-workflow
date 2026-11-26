@@ -2,21 +2,21 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/schematic-preplacement.zh.md
-/schematic-pre-placement-topology-space-reservation-trial-routes-gate:
+/schematic_pre_placement_topology_space_reservation_trial_routes_gate:
   en: 206c90b8e943296d
   zh: 9990acd7b97a26e2
-/schematic-pre-placement-topology-space-reservation-trial-routes-gate/required-order-before-any-new-symbol-placement:
+/schematic_pre_placement_topology_space_reservation_trial_routes_gate/required_order_before_any_new_symbol_placement:
   en: 6496a57129bdc100
   zh: dda765a0d84a2ebd
-/schematic-pre-placement-topology-space-reservation-trial-routes-gate/read-only-cli-workflow-commands:
+/schematic_pre_placement_topology_space_reservation_trial_routes_gate/read_only_cli_workflow_commands:
   en: 0c20a47ad219164f
   zh: 1e9d818bd11bf22e
-/schematic-pre-placement-topology-space-reservation-trial-routes-gate/request-v1-contract-abbreviated-illustrative-only:
+/schematic_pre_placement_topology_space_reservation_trial_routes_gate/request_v1_contract_abbreviated_illustrative_only:
   en: 2b6b9747186c4534
   zh: 8d076c914e2e6dac
-/schematic-pre-placement-topology-space-reservation-trial-routes-gate/engineering-limitations-and-acceptance:
+/schematic_pre_placement_topology_space_reservation_trial_routes_gate/engineering_limitations_and_acceptance:
   en: 8b5719767bdb5d41
   zh: 5194f85fc22e70da
-/schematic-pre-placement-topology-space-reservation-trial-routes-gate/two-stage-update-hard-vs-soft:
+/schematic_pre_placement_topology_space_reservation_trial_routes_gate/two_stage_update_hard_vs_soft:
   en: 368fba6b35181ec5
   zh: 7acc2aa07e3fb56d

@@ -2,30 +2,30 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/freerouting-seven-stage.zh.md
-/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview:
+/seven_stage_kicad_pcb_routing_using_freerouting_2_5_0_r10_preview:
   en: ef1fe3ab854153ea
   zh: b5f4f71bb7b3396e
-/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/immutable-stages-and-ownership:
+/seven_stage_kicad_pcb_routing_using_freerouting_2_5_0_r10_preview/immutable_stages_and_ownership:
   en: 1b7d3d3ab72f7ccf
   zh: f0aec79afddeb5f9
-/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/practical-use:
+/seven_stage_kicad_pcb_routing_using_freerouting_2_5_0_r10_preview/practical_use:
   en: fe4c55ebd11168a1
   zh: b995a1506abd28da
-/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/practical-use/plan-sample-route-plan-config-json:
+/seven_stage_kicad_pcb_routing_using_freerouting_2_5_0_r10_preview/practical_use/plan_sample_route_plan_config_json:
   en: 2cd1f6179f1d259c
   zh: a286ca11d19e34d0
-/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/practical-use/review-sample-route-import-config-json:
+/seven_stage_kicad_pcb_routing_using_freerouting_2_5_0_r10_preview/practical_use/review_sample_route_import_config_json:
   en: e530c26161933890
   zh: edd29c34ba74d766
-/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/practical-use/commands:
+/seven_stage_kicad_pcb_routing_using_freerouting_2_5_0_r10_preview/practical_use/commands:
   en: 1c4de867e7bf806a
   zh: d8ea3ed4d0eb3258
-/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/freerouting-2-5-0-fanout-and-optimization-safety:
+/seven_stage_kicad_pcb_routing_using_freerouting_2_5_0_r10_preview/freerouting_2_5_0_fanout_and_optimization_safety:
   en: e76825733a5e8c33
   zh: 5286df6b0f9fff47
-/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/mandatory-native-netclass-membership-proof-r10-protected-gnd-fix:
+/seven_stage_kicad_pcb_routing_using_freerouting_2_5_0_r10_preview/mandatory_native_netclass_membership_proof_r10_protected_gnd_fix:
   en: b63414a12650184c
   zh: cc9ac16167f2a025
-/seven-stage-kicad-pcb-routing-using-freerouting-2-5-0-r10-preview/important-limitations-and-test-gate:
+/seven_stage_kicad_pcb_routing_using_freerouting_2_5_0_r10_preview/important_limitations_and_test_gate:
   en: 6484857e2567b676
   zh: 5e0fbf4d0fe82a68

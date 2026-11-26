@@ -2,30 +2,30 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/engineering-rules.zh.md
-/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs:
+/electronic_product_engineering_rules_safety_applicability_and_25_controlled_repairs:
   en: 3f0f3388d639a47c
   zh: e96ed9ecc793d839
-/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/1-twenty-five-rule-repairs-and-their-validation-boundaries:
+/electronic_product_engineering_rules_safety_applicability_and_25_controlled_repairs/1_twenty_five_rule_repairs_and_their_validation_boundaries:
   en: 0a60b2b119228260
   zh: 077554ad2ed977d5
-/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/2-quantified-product-level-acceptance-profile:
+/electronic_product_engineering_rules_safety_applicability_and_25_controlled_repairs/2_quantified_product_level_acceptance_profile:
   en: d4cf025f07e98fc2
   zh: d4989c179401d1ed
-/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/2-quantified-product-level-acceptance-profile/stackup-and-impedance:
+/electronic_product_engineering_rules_safety_applicability_and_25_controlled_repairs/2_quantified_product_level_acceptance_profile/stackup_and_impedance:
   en: e1473cd90d8c07ee
   zh: 8eaa05f9e3682eda
-/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/2-quantified-product-level-acceptance-profile/high-speed-and-differential-links:
+/electronic_product_engineering_rules_safety_applicability_and_25_controlled_repairs/2_quantified_product_level_acceptance_profile/high_speed_and_differential_links:
   en: f3f9a90831c2f998
   zh: 2f35d05fc72da3c0
-/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/2-quantified-product-level-acceptance-profile/power-thermal-and-safety:
+/electronic_product_engineering_rules_safety_applicability_and_25_controlled_repairs/2_quantified_product_level_acceptance_profile/power_thermal_and_safety:
   en: 17e12a77d3f3d873
   zh: 4ac9ad90d003b683
-/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/3-legacy-release-classes-versus-r10-workflow:
+/electronic_product_engineering_rules_safety_applicability_and_25_controlled_repairs/3_legacy_release_classes_versus_r10_workflow:
   en: bed52ba6ac58fa87
   zh: be76478d790f0546
-/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/4-final-copper-manufacturing-evidence-and-risk-closure:
+/electronic_product_engineering_rules_safety_applicability_and_25_controlled_repairs/4_final_copper_manufacturing_evidence_and_risk_closure:
   en: 0c61dc524b2660ca
   zh: 3741c9da0db53813
-/electronic-product-engineering-rules-safety-applicability-and-25-controlled-repairs/5-manufacturer-and-official-technical-basis:
+/electronic_product_engineering_rules_safety_applicability_and_25_controlled_repairs/5_manufacturer_and_official_technical_basis:
   en: cdc24156b3b7bec6
   zh: 4f9817c18fa760d2

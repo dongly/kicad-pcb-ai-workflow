@@ -2,12 +2,12 @@
 # its English and Chinese blocks outside code blocks and generated regions.
 # After editing either side, bring the other along and re-record with:
 #   python i18n/verify-pairing.py --write i18n/zh-CN/kicad-pcb-ai-workflow/references/jlcpcb-fab-confirmation.zh.md
-/jlcpcb-rigid-fr-4-explicit-manufacturer-profile-review-and-user-confirmation/scope-sources-and-distinction:
+/jlcpcb_rigid_fr_4_explicit_manufacturer_profile_review_and_user_confirmation/scope_sources_and_distinction:
   en: e562395a7b43fd75
   zh: 9a00c12681d373cf
-/jlcpcb-rigid-fr-4-explicit-manufacturer-profile-review-and-user-confirmation/human-in-the-loop-sequence-do-not-auto-confirm:
+/jlcpcb_rigid_fr_4_explicit_manufacturer_profile_review_and_user_confirmation/human_in_the_loop_sequence_do_not_auto_confirm:
   en: 6a6f2a7d988c6a02
   zh: 2527c809b98fca05
-/jlcpcb-rigid-fr-4-explicit-manufacturer-profile-review-and-user-confirmation/hard-failure-cases:
+/jlcpcb_rigid_fr_4_explicit_manufacturer_profile_review_and_user_confirmation/hard_failure_cases:
   en: 17d8eda23403a49a
   zh: 3dc727a12b7c8454
