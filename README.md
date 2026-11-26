@@ -77,6 +77,8 @@ flowchart TD
 
 **实际 Skill 位于仓库内的 [`kicad-pcb-ai-workflow/` 子目录](kicad-pcb-ai-workflow/)**，只安装这一层（包含 `SKILL.md`、`scripts/`、`references/`、`assets/`）。仓库根目录不是Skill安装目录。
 
+**双语言安装包**：在仓库根目录运行 `python development/build_installers.py --apply --output-dir <输出目录>`，可生成并排的独立双语安装包：`en/kicad-pcb-ai-workflow/`（英文）与 `zh-CN/kicad-pcb-ai-workflow/`（简体中文）。两个变体目录结构完全一致，脚本、assets 与 JSON 数据字节相同，仅 Markdown 文档为对应语言；任选其一整个目录安装到 Agent Skills 目录（保持目录名 `kicad-pcb-ai-workflow`），不要只复制 `SKILL.md`，也不要混装两种语言。不带 `--apply` 仅预览不落盘。构建前会自动校验双语配对（[i18n/verify-pairing.py](i18n/verify-pairing.py)）与独立包完整性，并在输出目录生成 `INSTALL.md` 与 `package-report.json`。
+
 - **使用R10当前源码**：`git clone https://github.com/jackwang988/kicad-pcb-ai-workflow.git`，再将仓库内部的 `kicad-pcb-ai-workflow/` 目录安装到 Agent Skills 目录。更新时以新目录完整替换、核对文件和原工程备份，勿与旧脚本混装。
 - **已有正式包**：[R9.4稳定包](dist/kicad-pcb-ai-workflow-R9.4.zip)和 [R10.0.0-rc.1历史预发布包](dist/kicad-pcb-ai-workflow-R10.0.0-rc.1.zip)不包含本次全部合并改动；**不要当作最新版七阶段布线包**。
 - **环境依赖**：匹配版本的 KiCad CLI/原生工程、可用的 Konnect MCP，普通网络自动布线还需要经SHA验证的 Freerouting **2.5.0 JAR** 和 Java，以及明确批准的厂规。Konnect/Freerouting为独立外部工具，不随Skill自动安装。`jsonschema>=4.18,<5` 见 [requirements.txt](requirements.txt)。
