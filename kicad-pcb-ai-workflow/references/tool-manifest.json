@@ -626,13 +626,13 @@
       "file": "scripts/schematic_overlap.py",
       "version": "R10.0-alpha.1",
       "command": "python3 scripts/schematic_overlap.py --help",
-      "input": "Project directory, top .kicad_sch, kicad-cli path, optional per-sheet layout JSON from Konnect get_schematic_layout, pypdfium2 for --png",
-      "output": "Read-only JSON overlap report (sheet frames, out-of-frame objects, text pairs, exact stroke (ink) contacts, symbol pairs, label placement) and, with --png, one PNG per page; never an approval",
-      "validation_scope": "Synthetic positive/negative fixture, rotation probe and one real four-sheet project on KiCad 10.0.7; symbol outlines need live layout input.",
-      "sha256": "0886557e244e50c3f6b2a84f3f3862f9335b47ce068f61f04de0f4a7969bde5c",
+      "input": "Project directory, top .kicad_sch, kicad-cli path, current per-sheet layout JSON from Konnect get_schematic_layout required for complete symbol-body screening, pypdfium2 for --png",
+      "output": "Read-only JSON overlap report (sheet frames, out-of-frame objects, text pairs, exact stroke (ink) contacts, component/component and power-symbol overlaps, wire crossings, label placement, layout coverage) and, with --png, one PNG per page; never an approval",
+      "validation_scope": "Synthetic positive/negative fixtures, rotation probe and one real four-sheet project on KiCad 10.0.7; complete symbol-body screening requires live layout input for every sheet.",
+      "sha256": "0b75216285221b9e2b859ae944dce9b3e4ce325e3d7ae19d41e3f2bfeb00be64",
       "exit_codes": {
-        "0": "No overlap or label placement finding detected in the available evidence",
-        "2": "Findings or BLOCKED; repair and rerun"
+        "0": "No findings with complete per-sheet layout coverage",
+        "2": "Findings, incomplete layout coverage, or BLOCKED; repair and rerun"
       }
     },
     {

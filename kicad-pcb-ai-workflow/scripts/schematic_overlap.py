@@ -7,12 +7,14 @@ KiCad ERC does not report either class; 0/0 ERC says nothing about them.
   1 SHEET_FRAME   sheet boxes overlapping each other or leaving the paper   (file)
   2 OUT_OF_FRAME  items outside the paper                                     (file)
   3 TEXT_PAIR     overlapping text, incl. label/label, ref/value, label/pin (kicad-cli SVG)
-  4 SYMBOL_PAIR   component outlines overlapping, wire crossing a component  (Konnect layout JSON)
+  4 SYMBOL_PAIR   component/component overlap, power-symbol overlap, wire crossing a component (Konnect layout JSON)
   5 WIRE_TEXT     wire running through text                                   (file + SVG)
   6 LABEL         label not on a wire interior / text past the wire end      (file + SVG)
 
-Blind spot: the SVG text record carries text only. Symbol outlines come only
-from --layout (Konnect get_schematic_layout). Review page renders after this.
+Blind spot: the SVG text record carries text only. Symbol bounds come only
+from --layout (Konnect get_schematic_layout) for each sheet. Missing coverage
+returns INCOMPLETE rather than a misleading NO_OVERLAP_DETECTED. Review page
+renders for readability after this conservative geometry screen.
 """
 import argparse
 import json
@@ -297,6 +299,29 @@ def _layout_components(blob, where):
     return result
 
 
+def layout_coverage(sheet_names, layout_names):
+    """Report which sheets lack geometry needed to screen symbol bodies."""
+    expected, provided = set(sheet_names), set(layout_names)
+    missing = sorted(expected - provided)
+    unexpected = sorted(provided - expected)
+    return {'required': True, 'complete': not missing,
+            'provided_sheets': sorted(expected & provided),
+            'missing_sheets': missing, 'unexpected_sheets': unexpected}
+
+
+def _layout_status(findings, coverage):
+    if findings:
+        return 'OVERLAPS_FOUND'
+    if not coverage['complete'] or coverage['unexpected_sheets']:
+        return 'INCOMPLETE'
+    return 'NO_OVERLAP_DETECTED'
+
+
+def _is_power_symbol(reference, lib_id):
+    return (str(lib_id).lower().startswith('power:')
+            or str(reference).upper().startswith(('#PWR', '#FLG')))
+
+
 def check_symbols(components, segments, name, findings):
     order = sorted(components, key=lambda c: c[1][0])
     for i, (ra, a, la) in enumerate(order):
@@ -306,7 +331,15 @@ def check_symbols(components, segments, name, findings):
             ov = _overlap(a, b)
             w, h = _positive(ov)
             if w > PAIR_MIN and h > PAIR_MIN:
-                findings.append(('SYMBOL_PAIR', name, '%s overlaps %s' % (ra, rb), {'overlap_mm': [round(v, 3) for v in ov]}))
+                power_overlap = _is_power_symbol(ra, la) or _is_power_symbol(rb, lb)
+                rule = 'POWER_SYMBOL.OVERLAP' if power_overlap else 'SYMBOL.OVERLAP'
+                if power_overlap:
+                    message = '%s (%s) overlaps %s (%s)' % (ra, la, rb, lb)
+                else:
+                    message = '%s overlaps %s' % (ra, rb)
+                findings.append(('SYMBOL_PAIR', name, message,
+                                 {'rule': rule, 'a': ra, 'a_lib_id': la, 'b': rb, 'b_lib_id': lb,
+                                  'overlap_mm': [round(v, 3) for v in ov]}))
     for ref, box, lib in components:
         inner = (box[0] + TEXT_MIN, box[1] + TEXT_MIN, box[2] - TEXT_MIN, box[3] - TEXT_MIN)
         if inner[0] >= inner[2] or inner[1] >= inner[3]:
@@ -463,12 +496,20 @@ def run(root, top, cli, layouts, min_entry, png_dir=None, dpi=200):
     counts = {}
     for section in sorted({f[0] for f in findings}):
         counts[section] = sum(1 for f in findings if f[0] == section)
-    return {'status': 'OVERLAPS_FOUND' if findings else 'NO_OVERLAP_DETECTED',
+    coverage = layout_coverage(trees.keys(), layouts.keys())
+    status = _layout_status(findings, coverage)
+    manual_remaining = []
+    if coverage['missing_sheets']:
+        manual_remaining.append('Symbol-body overlap was not screened on sheets missing --layout: ' + ', '.join(coverage['missing_sheets']))
+    if coverage['unexpected_sheets']:
+        manual_remaining.append('Unused --layout entries do not match hierarchy sheets: ' + ', '.join(coverage['unexpected_sheets']))
+    manual_remaining.append('Readability (crowding, confusing routing) is not judged by any script; look at the PNG of every page for that')
+    return {'status': status,
             'scope': 'schematic_graphic_and_text_overlap_only', 'production_authorized': False,
-            'counts': counts, 'pages': summary, 'findings': findings, 'png': rendered, 'png_dpi': dpi if rendered else None,
+            'layout_coverage': coverage, 'counts': counts, 'pages': summary,
+            'findings': findings, 'png': rendered, 'png_dpi': dpi if rendered else None,
             'sections': ['SHEET_FRAME', 'OUT_OF_FRAME', 'TEXT_PAIR', 'SYMBOL_PAIR', 'WIRE_TEXT', 'LABEL', 'STROKE'],
-            'manual_remaining': ['Symbol outlines need --layout (Konnect get_schematic_layout) per sheet',
-                                 'Readability (crowding, confusing routing) is not judged by any script; look at the PNG of every page for that']}
+            'manual_remaining': manual_remaining}
 
 
 def main():
@@ -499,7 +540,7 @@ def main():
         if out:
             (out / 'overlap-report.json').write_text(json.dumps(r, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         print(json.dumps(r, ensure_ascii=False, indent=2))
-        return 2 if r['status'] == 'OVERLAPS_FOUND' else 0
+        return 0 if r['status'] == 'NO_OVERLAP_DETECTED' else 2
     except Exception as e:
         print(json.dumps({'status': 'BLOCKED', 'reason': str(e), 'production_authorized': False, 'findings': [blocking('INPUT.CONTRACT', e)]}, ensure_ascii=False))
         return 2

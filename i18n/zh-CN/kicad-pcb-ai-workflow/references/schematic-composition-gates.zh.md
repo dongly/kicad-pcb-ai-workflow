@@ -10,7 +10,7 @@
 4. 按真实引脚拓扑与信号流放置，然后使用短正交局部导线。**每一条电源与地/回流网络都用原生 KiCad `power:` 库符号绘制——绝不用全局标签（也不用任何其他标签）。** 把 `VIN_RAW` 与 `VIN`、开关电源轨、PGND、AGND 以及各独立电源域保留为不同的电源符号。绝不把 `PWR_FLAG` 等同于正电源或地网络符号。对**每一条**非电源的跨图接口使用项目作用域的图纸引脚与层次标签。不要把全局标签当作默认的跨图连接方式：只有真正全板通用的网络且已列入 `composition.labels.allow_global_labels` 时才允许，其余情况门禁都会报告 `LABEL_POLICY.GLOBAL`。
 5. 保存权威的 `01_WORKING/` 原理图，导出**实际的** KiCad PDF/SVG 与 XML 网表，并按下文创建与源绑定、按对象绑定的清单。必须包含全部可见字段与注释边界；保留其原生对象 UUID 清单。清单与视图通过 SHA-256 绑定到当前原理图版本。
 6. 以选择加入的构图策略运行 `schematic_style.py`。任何检测到的标题栏或注释重叠、缺失符号、非法边框、缺失子页、过期证据或不安全几何都会阻断完成。其输出是**需要视觉审查的实测几何筛查**，绝不是自动完成全部渲染几何验收的声明。
-6b. 运行 `python scripts/schematic_overlap.py /project --schematic root.kicad_sch`，对整个层次执行一次（每张图可加 `--layout SHEET=layout.json`，内容取自 Konnect `get_schematic_layout`，以启用符号对部分）。任何发现即阻断：KiCad ERC 不检查文本或图形重叠。重叠本身完全由脚本判定（`STROKE` 从 SVG 测试真实墨迹接触）；页面图像只用于可读性检查。
+6b. 运行 `python scripts/schematic_overlap.py /project --schematic root.kicad_sch`，对整个层次执行一次，并为每张图提供一份当前的 Konnect `get_schematic_layout` JSON（`--layout SHEET=layout.json`）。该几何输入是筛查符号边界所必需的，涵盖元件相互重叠以及原生电源符号与元件重叠（`POWER_SYMBOL.OVERLAP`）。缺少或不匹配任一图纸的布局都会产生 `INCOMPLETE` 并返回退出码 2，绝不能视为无重叠。任何发现即阻断：KiCad ERC 不检查文本或图形重叠。`STROKE` 从 SVG 测试真实墨迹接触；页面图像仅用于可读性检查。
 7. 运行既有的 G1 `static_review.py` 路径、独立的原生网表/ERC、有依据可溯的 AI 审查以及真正的工程师批准。拓扑失败回到 L0；外观重排不得改变原有网络。
 
 ## 只读的图纸规划
@@ -124,7 +124,7 @@
 
 ## 重叠与标签放置筛查（`schematic_overlap.py`）
 
-只读。用法：`python scripts/schematic_overlap.py /project --schematic root.kicad_sch [--kicad-cli PATH] [--layout child.kicad_sch=layout.json ...] [--min-entry 2.54] [--output-dir DIR] [--png [--dpi 200]]`。传入顶层 `.kicad_sch`，而不是 `.kicad_pro`（项目导出可能以 "加载原理图失败" 失败）。退出码 `0` = 未发现任何问题，`2` = 有发现或 BLOCKED，绝不是批准。JSON 报告（`overlap-report.json`）列出各页的导线/标签/文本计数。
+只读。用法：`python scripts/schematic_overlap.py /project --schematic root.kicad_sch [--kicad-cli PATH] [--layout SHEET=layout.json ...] [--min-entry 2.54] [--output-dir DIR] [--png [--dpi 200]]`。要获得完整几何筛查，必须为层次中的每张图纸传入一份当前 Konnect `get_schematic_layout` JSON。传入顶层 `.kicad_sch`，而不是 `.kicad_pro`（项目导出可能以 "加载原理图失败" 失败）。退出码 `0` 表示无发现且布局覆盖完整；`2` 表示有发现、布局不完整或 BLOCKED，绝不是批准。JSON 报告（`overlap-report.json`）列出各页的导线/标签/文本计数与布局覆盖状态。
 
 文本与图形分开检查，因为它们的证据不同。
 
@@ -134,7 +134,7 @@
 | `OUT_OF_FRAME` | `.kicad_sch` 坐标与纸张尺寸对比 | `OUT_OF_FRAME` 符号/标签/文本/结点/不连接标记的锚点及导线端点落在纸外 |
 | `TEXT_PAIR` | `kicad-cli sch export svg` 不可见文本记录（x, y, textLength, font-size, anchor, rotate） | `TEXT_PAIR` 两个文本框重叠（两轴均 >0.15 mm）：标签压标签、位号压值、标签压引脚名 |
 | `WIRE_TEXT` | SVG 文本框与导线段对比 | `WIRE_TEXT` 导线穿过文本（进入框内 >0.3 mm） |
-| `SYMBOL_PAIR` | `--layout` 文件（Konnect `get_schematic_layout` 变换后的边界） | `SYMBOL_PAIR.OVERLAP` 组件本体相交；`SYMBOL_PAIR.WIRE` 导线穿过另一符号（>0.5 mm）。未提供 `--layout` 时该部分报告为未运行 |
+| `SYMBOL_PAIR` | 每页 `--layout` 文件（Konnect `get_schematic_layout` 变换后的边界；保守的包围盒筛查） | `SYMBOL.OVERLAP` 两个元件本体相交；`POWER_SYMBOL.OVERLAP` 原生电源符号与其他符号相交；`SYMBOL_PAIR.WIRE` 导线穿过另一符号（>0.5 mm）。完整结果必须覆盖每张图纸；缺少布局时返回 `INCOMPLETE` |
 | `STROKE` | SVG 矢量路径：字形折线、导线路径、未填充符号轮廓 | `STROKE.TEXT_LINE` 导线或符号轮廓描边穿过文本字形；`STROKE.TEXT_TEXT` 两个文本的字形相触；`STROKE.WIRE_SYMBOL` 导线穿过符号轮廓。终止于轮廓上的导线属于引脚连接，交给 ERC 处理 |
 | `LABEL` | `.kicad_sch` 标签/导线/总线加 SVG 文本长度 | `LABEL.OFF_WIRE` 标签不在导线或总线上（落在裸引脚或悬空）；`LABEL.WIRE_END` 网络标签位于导线端点；`LABEL.TEXT_PAST_WIRE` 网络标签文字长于其前方导线；`LABEL.ENTRY_SHORT` 层次/全局标签的进入导线短于 `--min-entry`；`LABEL.DUPLICATE_NET` 同一张图纸上同一网络名出现两个及以上层次/全局标签（多出的标签会把导线段静默合并成一个网络，且 ERC 不告警） |
 
