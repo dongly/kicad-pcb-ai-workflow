@@ -629,7 +629,7 @@
       "input": "Project directory, top .kicad_sch, kicad-cli path, optional per-sheet layout JSON from Konnect get_schematic_layout, pypdfium2 for --png",
       "output": "Read-only JSON overlap report (sheet frames, out-of-frame objects, text pairs, exact stroke (ink) contacts, symbol pairs, label placement) and, with --png, one PNG per page; never an approval",
       "validation_scope": "Synthetic positive/negative fixture, rotation probe and one real four-sheet project on KiCad 10.0.7; symbol outlines need live layout input.",
-      "sha256": "a51d089a0d964ee7c32e81dd21bcc8a557a3f8279372def82aa34e4c1c060985",
+      "sha256": "0886557e244e50c3f6b2a84f3f3862f9335b47ce068f61f04de0f4a7969bde5c",
       "exit_codes": {
         "0": "No overlap or label placement finding detected in the available evidence",
         "2": "Findings or BLOCKED; repair and rerun"

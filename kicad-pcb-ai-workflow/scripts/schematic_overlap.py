@@ -318,6 +318,19 @@ def check_symbols(components, segments, name, findings):
 
 def check_labels(page_labels, segments, texts, name, findings, min_entry):
     merged = runs(segments)
+    # One global/hierarchical label per net per page: KiCad merges repeated
+    # names into one net without an ERC warning, so every extra instance is
+    # flagged and the sheet keeps exactly one interface per net.
+    groups = {}
+    for lab in page_labels:
+        if lab['kind'] in ('global_label', 'hierarchical_label'):
+            groups.setdefault(lab['text'], []).append(lab)
+    for text, labs in sorted(groups.items()):
+        if len(labs) > 1:
+            at = ', '.join('(%g,%g)' % (l['x'], l['y']) for l in labs)
+            findings.append(('LABEL', name, 'Net "%s" carries %d hierarchical/global labels on this sheet at %s; keep one label per net per page'
+                             % (text, len(labs), at),
+                             {'rule': 'LABEL.DUPLICATE_NET', 'uuid': labs[0]['uuid'], 'count': len(labs)}))
     for lab in page_labels:
         where = '%s "%s" @(%g,%g)' % (lab['kind'], lab['text'], lab['x'], lab['y'])
         hit = run_at(lab['x'], lab['y'], merged)

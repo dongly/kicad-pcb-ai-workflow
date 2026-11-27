@@ -136,9 +136,9 @@
 | `WIRE_TEXT` | SVG 文本框与导线段对比 | `WIRE_TEXT` 导线穿过文本（进入框内 >0.3 mm） |
 | `SYMBOL_PAIR` | `--layout` 文件（Konnect `get_schematic_layout` 变换后的边界） | `SYMBOL_PAIR.OVERLAP` 组件本体相交；`SYMBOL_PAIR.WIRE` 导线穿过另一符号（>0.5 mm）。未提供 `--layout` 时该部分报告为未运行 |
 | `STROKE` | SVG 矢量路径：字形折线、导线路径、未填充符号轮廓 | `STROKE.TEXT_LINE` 导线或符号轮廓描边穿过文本字形；`STROKE.TEXT_TEXT` 两个文本的字形相触；`STROKE.WIRE_SYMBOL` 导线穿过符号轮廓。终止于轮廓上的导线属于引脚连接，交给 ERC 处理 |
-| `LABEL` | `.kicad_sch` 标签/导线/总线加 SVG 文本长度 | `LABEL.OFF_WIRE` 标签不在导线或总线上（落在裸引脚或悬空）；`LABEL.WIRE_END` 网络标签位于导线端点；`LABEL.TEXT_PAST_WIRE` 网络标签文字长于其前方导线；`LABEL.ENTRY_SHORT` 层次/全局标签的进入导线短于 `--min-entry` |
+| `LABEL` | `.kicad_sch` 标签/导线/总线加 SVG 文本长度 | `LABEL.OFF_WIRE` 标签不在导线或总线上（落在裸引脚或悬空）；`LABEL.WIRE_END` 网络标签位于导线端点；`LABEL.TEXT_PAST_WIRE` 网络标签文字长于其前方导线；`LABEL.ENTRY_SHORT` 层次/全局标签的进入导线短于 `--min-entry`；`LABEL.DUPLICATE_NET` 同一张图纸上同一网络名出现两个及以上层次/全局标签（多出的标签会把导线段静默合并成一个网络，且 ERC 不告警） |
 
-标签文字方向取自 SVG 导出：基线在 0°/180° 时向右延伸，90°/270° 时向上延伸，且 `justify right` 使文字终止于锚点。层次与全局标签在其锚点处连接，因此 `LABEL.WIRE_END` 只适用于网络标签。
+标签文字方向取自 SVG 导出：基线在 0°/180° 时向右延伸，90°/270° 时向上延伸，且 `justify right` 使文字终止于锚点。层次与全局标签在其锚点处连接，因此 `LABEL.WIRE_END` 只适用于网络标签。普通网络标签必须落在导线内部；层次与全局标签锚定在导线末端，且同一网络在每张图纸上只允许有一个（`LABEL.DUPLICATE_NET`）。
 
 `TEXT_PAIR` 与 `WIRE_TEXT` 使用文本框，因此也会报告临界情况（文本框重叠、字形并未相触）；`STROKE` 回答的是确切问题——「画出的墨迹是否接触画出的墨迹」，判断导线穿文本应以它为准。填充区域（符号本体填充、结点圆点）不是描边，不参与比较。
 
