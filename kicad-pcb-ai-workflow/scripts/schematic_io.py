@@ -13,7 +13,7 @@ def parse(text):
         if text[i]=='"':
             start=i;i+=1
             while i<len(text):
-                if text[i]=='\\':i+=2;continue
+                if text[i]==chr(92):i+=2;continue
                 if text[i]=='"':break
                 i+=1
             if i>=len(text):raise ValueError('Unterminated quoted string')

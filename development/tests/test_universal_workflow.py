@@ -32,6 +32,10 @@ class UniversalTests(unittest.TestCase):
         self.assertEqual(sio.parse(a),sio.parse(a.replace('\t','  ')))
     def test_malformed_quote_rejected(self):
         with self.assertRaises(ValueError):sio.parse('(kicad_sch (text "unfinished))')
+    def test_escaped_quotes_in_string(self):
+        escaped_quote = chr(92) + chr(34)
+        source = '(text "A ' + escaped_quote + 'quoted' + escaped_quote + ' label")'
+        self.assertEqual(sio.parse(source), ['text', 'A "quoted" label'])
     def test_quoted_parentheses(self):self.assertEqual(sio.parse('(text "(not structure)")'),['text','(not structure)'])
     def test_sheet_cycle_rejected(self):
         (self.root/'main.kicad_sch').write_text('(kicad_sch (sheet (property "Sheetfile" "main.kicad_sch")))', encoding="utf-8")

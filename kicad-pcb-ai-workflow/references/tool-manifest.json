@@ -552,7 +552,7 @@
       "input": "Explicit project contracts; no inferred circuit/process values",
       "output": "Declared-scope reports or independent candidate; never implicit engineering approval",
       "validation_scope": "Software contracts; live GUI, faults and hardware are separately recorded in this release evidence.",
-      "sha256": "f2a8d92088629abe57d0a66f58171ed3e59876ae7a989b7e7cbea3c1ff528bc8",
+      "sha256": "a0d398b14c05a1a47d5df04c90089a3eb97ea931d1eb93427f036afe3292954c",
       "exit_codes": {
         "0": "Declared scope complete/preview; never automatic approval",
         "2": "BLOCKED; do not advance or manufacture"
